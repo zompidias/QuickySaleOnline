@@ -1,0 +1,91 @@
+﻿@model BusinessLayer.ContactUs
+
+@{
+    ViewBag.Title = "Please Fill in our Enquiry Form and will get back to you shortly";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<section class="contact">
+    <header>
+        <h3>Delivery Days</h3>
+    </header>
+    <p>
+        <span class="label">Monday to Fridays</span>
+
+    </p>
+
+</section>
+
+<section class="contact">
+    <header>
+        <h3>Phone</h3>
+    </header>
+    <p>
+        <span class="label">Main Line 9am to 5pm:</span>
+        <span>08120042929</span>
+    </p>
+
+</section>
+
+<section class="contact">
+    <header>
+        <h3>Email</h3>
+    </header>
+
+    <p>
+        <span class="label">General:</span>
+        <span><a href="mailto:contactus@quickysale.com">contactus@quickysale.com</a></span>
+    </p>
+</section>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    @*<fieldset>
+        <legend>ContactUs</legend>*@
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Comment)
+        </div>
+        
+        <div class="editor-multiline-field">
+            @Html.EditorFor(model => model.Comment)
+            @Html.ValidationMessageFor(model => model.Comment)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    @*</fieldset>*@
+}
+
+<div>
+    @Html.ActionLink("Back to Store", "Index", "Home")
+</div>
+

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.FoodItem>
+
+
+@{
+    ViewBag.Title = "Quicky Sale Online Food Store";
+}
+@*<h2>@ViewBag.Title</h2> \*@
+
+@*</div>*@
+
+<div class="flashitTablet">
+    <h2>Delivery in 2 working Days or less in Abuja ONLY...</h2>
+    <h3> For missing items in our Store, You have the option of making a List after Order is complete and send.
+    We shall include on delivery....</h3>
+</div>
+<div id="mainbodyTablet">
+
+
+    @*<div id="submain">*@
+    <div id="cf" style="top:0; left:0;">
+        <img class="bottom" src="~/Images/qs_11_vegwithCowImage.png" alt="We Deliver to Your Door" style=" height: 60%; width: 60%; position: relative; top: 0; left: 0;">
+        <img class="middle" src="~/Images/qs_11_qs_veginBasket.png" alt="We are here to Serve" style=" width: 60%; margin-left: 227px; ">
+        @*<img class="top" src="~/Images/qs_11_qs_king.png" alt="QuickySale U R King" style=" width: 60%; margin-left: 227px; ">*@
+        <img class="top" src="~/Images/qs_11_specialofferQS1.png" alt="QuickySale U R King" style=" width: 60%; margin-left: 227px; ">
+    </div>
+    @*</div>*@
+   
+      <div>
+        <h3><em>Fresh</em> off the grill</h3>
+        <ul id="album-list-promo">
+
+            @foreach (var food in Model)
+            {
+                <li>
+                    <a href="@Url.Action("Details", "Store",new { id = food.FoodItemId })">
+                        <img alt="@food.AlternateText"
+                             src="@Url.Content(food.FoodPicture)" />
+                        <span>@food.FoodName  =N=@Html.DisplayFor(model => food.FoodCost)</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+    </div>
+@*</div>*@

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.SubFoodGroup>
+
+@using QuickySaleOnlineShopper.Models;
+@{
+    ViewBag.Title = "Browse List";
+}
+
+<h2>@ViewBag.Title</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Food Items</title>
+</head>
+<body>
+    <div>
+        @*<h2>Browsing Food Groups: @Model.FoodGroupName</h2>*@
+        <ul data-role="listview" data-filter="true">
+            
+            @foreach (SubFoodGroup genre in @Model)
+            {
+                @*<li>@Html.ActionLink(genre.FoodGroupName, "Browse", new { genre = genre.FoodGroupName })</li>*@
+                <li>@Html.ActionLink(genre.SubFoodGroupName, "SubBrowse", new { id = genre.SubFoodGroupId })</li>
+            }
+        </ul>
+        <p>
+            @Html.ActionLink("Back", "Index", "Store")
+        </p>
+    </div>
+</body>
+</html>

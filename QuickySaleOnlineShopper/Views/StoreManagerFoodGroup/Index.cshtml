@@ -1,0 +1,36 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.FoodGroup>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodGroupName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodGroupName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FoodGroupId }) 
+            @*@Html.ActionLink("Details", "Details", new { id=item.FoodGroupId }) |*@
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.FoodGroupId })*@
+        </td>
+    </tr>
+}
+
+</table>
+<div>
+    @Html.ActionLink("Back", "Index", "StoreManagerItems")
+</div>

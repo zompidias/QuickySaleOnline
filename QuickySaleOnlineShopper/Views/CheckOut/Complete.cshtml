@@ -1,0 +1,45 @@
+﻿@model decimal
+
+@{
+    ViewBag.Title = "Check Out Complete";
+}
+@{
+    var prod = (string)ViewData["CustomerAddress"];
+}
+@{
+    if ((string)ViewData["CustomerAddress"] != null && @Model != null)
+    {
+         prod = (string)ViewData["CustomerAddress"];
+    }
+    else
+    {
+         prod = "Address On System";
+        
+    }
+}
+
+<h1>Thank You for Your Order!</h1>
+<h2>@ViewBag.Title</h2>
+
+<p>Delivery will be made in 2 working days or less. Your Order Number is: @Model; </p>
+<br />
+<p>
+    <b>Payment will be made on delivery by cash, bank transfer or card, once items ordered have been inspected and accepted by the buyer.</b>
+</p>
+<br />
+<p>Confirmation email will be sent out shortly.</p>
+<p>Please Note there are no refunds or returns once items have been accepted and paid for.</p>
+<br />
+<div><b>
+    Delivery To:- <br />
+    @prod
+ </b>
+   
+    </div>
+<p>How about shopping for some more grocery in our @Html.ActionLink("Store", "Index", "Home")</p>
+
+<p>For missing items in our Store, You have the option of making a List after Order is complete and send.
+    We shall include on delivery... Please Add your Order Number on the List by  @Html.ActionLink("Email", "Create", "ContactUs")</p>
+
+
+

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.FoodItem>
+
+@*<ul id="album-list" >*@
+@*<div id="mainbody">*@
+<div id="Top">
+    <ul id="TOpcategories">
+        @foreach (var genre in Model)
+        {
+
+            <li>
+                <a href="@Url.Action("Details", "Store",new { id = genre.FoodItemId })">
+                    <img alt="@genre.AlternateText"
+                         src="@Url.Content(genre.FoodPicture)" />
+                    @*<span>@genre.FoodName </span>*@
+                </a>
+
+            </li>
+        }
+    </ul>
+</div>
+@*</div>*@
+@*@model IEnumerable<QuickySaleOnlineShopper.Models.FoodGroup>
+
+    <ul id="Rightcategories">
+        @foreach (var genre in Model)
+        {
+            <li>
+                @Html.ActionLink(genre.FoodGroupName,"Browse", new { id = genre.FoodGroupId }, null)
+            </li>
+        }
+    </ul>*@

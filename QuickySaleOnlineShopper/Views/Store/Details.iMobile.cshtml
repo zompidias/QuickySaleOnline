@@ -1,0 +1,66 @@
+﻿@model QuickySaleOnlineShopper.Models.FoodItem
+@*@model BusinessLayer.FoodItem*@
+@using QuickySaleOnlineShopper.CustomHTMLHelpers
+@*@using BusinessLayer;*@
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@*<fieldset>*@
+
+    <div id="album-details">
+        <ul data-role="listview" data-inset="false">
+            @*<li data-role="list-divider">@Html.LabelFor(model => model.Name)</li>*@
+            <li data-role="list-divider">
+
+                <div class="display-field">
+                    @Html.Image(@Model.FoodPicture, @Model.AlternateText)
+                    @*@Html.DisplayFor(model => model.FoodPicture)*@
+                </div>
+            </li>
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.FoodName)
+            </div>*@
+            <li>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.FoodName)
+                </div>
+
+                <div class="display-field">
+                    @Html.DisplayNameFor(model => model.FoodCost): =N=@Html.DisplayFor(model => model.FoodCost)
+                </div>
+
+                <div class="display-field">
+                    @Html.DisplayNameFor(model => model.FoodWeightTypeId): @Html.DisplayFor(model => model.FoodWeightType.FoodWeightTypeName)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayNameFor(model => model.SellerId): @Html.DisplayFor(model => model.QSSellerDetail.SellerName)
+                </div>
+            </li>
+
+
+        </ul> 
+    </div>
+    
+    <p class=" button">
+        @Html.ActionLink("Add to Cart", "AddToCart", "ShoppingCart", new { id = @Model.FoodItemId }, "")
+    
+    
+         </p>
+            <p class="button">
+        @Html.ActionLink("View Cart", "Index", "ShoppingCart", new { fooditem = @Model }, "")
+       
+</p>
+   
+
+
+
+@*</fieldset>*@
+<p>
+    @Html.ActionLink("Back", "SubBrowse", "Store", new { id=Model.SubFoodGroupId }, null)
+    @*@Html.ActionLink("Back To Store", "Index", "Home")*@
+</p>

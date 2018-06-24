@@ -1,0 +1,53 @@
+﻿<html>
+<body style="color:grey; font-size:15px;">
+    <font face="Helvetica, Arial, sans-serif">
+
+        <div style="position:absolute; height:50px;
+width:600px; background-color:#ffffff; padding:30px;">
+            <img src="/QSLogo16A.png" />
+        </div>
+        <br />
+
+        <div style="background-color: #ece8d4;
+width:600px; height:600px; padding:30px; margin-top:30px;">
+
+            <p>Dear {{CustomerName}},<p>
+
+            <p><b>Please Find Below Your Order placed on {{DateOfOrder}}</b></p>
+            <br />
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+
+                </tr>
+                <tr>
+                    <td>{{Item}}</td>
+                    <td>{{Quantity}}</td>
+                    <td>{{UnitPrice}}</td>
+
+                </tr>
+            </table>
+                <!--<tr>-->
+    <p><b>Transportaion: {{Transport}}</b></p>
+    <p><b>Total Cost: {{ToTalBill}}</b></p>
+    <p><b>Order Number: {{OrderNumber}}</b></p>
+                <!--</tr>
+                <tr>-->
+                    <!--<td>{{Transport}}</td>
+                    <td>{{ToTalBill}}</td>
+                    <td>{{OrderNumber}}</td>-->
+                <!--</tr>-->
+           
+
+            <!--<p>
+                {{EmailMessage}}-->
+
+                <br />
+            <br />
+            <p>Thank you</p><br />
+            <a href="www.quickysale.com"><b>QuickySale</b></a>
+        </div>
+</body>
+</html>

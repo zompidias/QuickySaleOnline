@@ -1,0 +1,70 @@
+﻿@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @*<link href="@Url.Content("~/Content/Site_Mobile.css")" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="title">
+        <h1> QS FOOD SHOPPER (M)</h1>
+    </div>
+    <div id="menucontainer">
+        <ul id="menu">
+            <li>@Html.ActionLink("Store", "Index", "Store")</li>
+            <li>@{Html.RenderAction("LoginDetail", "ShoppingCart");}</li>
+            <li>@{Html.RenderAction("CartSummary", "ShoppingCart");}</li>
+            <li>@Html.ActionLink("ContactUs", "Create", "ContactUs")</li>
+        </ul>
+    </div>
+    </div>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+*@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Mobile/css", "~/Content/jquerymobile/css")
+    @Scripts.Render("~/bundles/jquery", "~/bundles/jquerymobile")
+    
+</head>
+<body>
+    @*<link rel="logo" href="~/Content/Images/QSLogo6M.png" /> *@
+    @*<img src="~/Content/Images/QSLogo6M.png" />*@
+    <div data-role="page" data-theme="b">
+        @Html.Partial("_ViewSwitcher")
+        <div data-role="header" align="center">
+            @Html.ActionLink("Store", "Index", "Store")
+            @{Html.RenderAction("LoginDetail", "ShoppingCart");}
+            @{Html.RenderAction("CartSummary", "ShoppingCart");}
+            @Html.ActionLink("ContactUs", "Create", "ContactUs")
+            
+        </div>
+        <div data-role="header">
+            <h1>@ViewBag.Title</h1>
+        </div>
+        @using (@Html.BeginForm("SearchItem", "Store"))
+        {
+            <b><em>For Quick Search, Enter Item Below</em> </b>
+            <p align="right">@Html.TextBox("search") <input type="submit" value="Search Here" /></p>
+        }
+        <div data-role="content">
+            @RenderSection("featured", false)
+            @RenderBody()
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.FoodGroup>
+
+@using QuickySaleOnlineShopper.Models;
+
+@{
+    ViewBag.Title = "Browse Food Groups";
+}
+<h3>@ViewBag.Title</h3>
+<p>
+    @*Select from @Model.Count() genres;*@
+
+</p>
+@*@foreach (var genre in @Model)*@
+<ul style="list-style-type:none">
+    @foreach (FoodGroup genre in @Model)
+    {
+        <li>@Html.ActionLink(genre.FoodGroupName, "Browse", new { id = genre.FoodGroupId })</li>
+        @*<li>@Html.ActionLink(genre.FoodGroupName, "Details", new { id = genre.FoodGroupId })</li>*@
+    }
+</ul>
+@*<p class="button">
+        @Html.ActionLink("View Cart", "Index", "ShoppingCart", new { fooditem = @Model }, "")
+
+
+    </p>*@
+
+

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.FoodGroup>
+
+
+<div id="mainbody">
+    <div id="left">
+        <ul id="categories">
+            @foreach (var genre in Model)
+            {
+                <li>
+                    @Html.ActionLink(genre.FoodGroupName, "Browse", new { id = genre.FoodGroupId }, null)
+                </li>
+            }
+        </ul>
+
+    </div>
+</div>

@@ -1,0 +1,1173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36004F61-8A81-481F-AB51-E31593862AE6}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuickySaleOnlineShopper</RootNamespace>
+    <AssemblyName>QuickySaleOnlineShopper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.3.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\RazorEngine.3.3.0\lib\net40\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.30506.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.30506.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.30506.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.30506\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>False</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\BundleMobileConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CheckOutController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Controllers\StoreManagerFoodGroupController.cs" />
+    <Compile Include="Controllers\StoreManagerFoodItemController.cs" />
+    <Compile Include="Controllers\StoreManagerFoodWeightController.cs" />
+    <Compile Include="Controllers\StoreManagerItemsController.cs" />
+    <Compile Include="Controllers\StoreManagerSellerDetailController.cs" />
+    <Compile Include="Controllers\StoreManagerSubFoodGroupController.cs" />
+    <Compile Include="Controllers\ViewSwitcherController.cs" />
+    <Compile Include="CustomHTMLHelpers\CustomHTMLHelpers.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\BankDetails.cs" />
+    <Compile Include="Models\ContactUs.cs" />
+    <Compile Include="Models\CustomerDetail.cs" />
+    <Compile Include="Models\CustomerOrderDetail.cs" />
+    <Compile Include="Models\FoodGroup.cs" />
+    <Compile Include="Models\FoodItem.cs" />
+    <Compile Include="Models\FoodWeightType.cs" />
+    <Compile Include="Models\OnlineStoreEntities.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderNumber.cs" />
+    <Compile Include="Models\QSSellerDetail.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\StoreCart.cs" />
+    <Compile Include="Models\SubFoodGroup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ShoppingCartRemoveViewModel.cs" />
+    <Compile Include="ViewModels\ShoppingCartViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Templates\EmailOrder.html" />
+    <Content Include="App_Data\Templates\QSLogo16A.png" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\BusinessLayer.dll" />
+    <Content Include="bin\BusinessLayer.pdb" />
+    <Content Include="bin\de\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\de\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\de\System.Spatial.resources.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.xml" />
+    <Content Include="bin\DotNetOpenAuth.Core.dll" />
+    <Content Include="bin\DotNetOpenAuth.Core.xml" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.xml" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.xml" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.xml" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.xml" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\es\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\es\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\es\System.Spatial.resources.dll" />
+    <Content Include="bin\fr\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\fr\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\fr\System.Spatial.resources.dll" />
+    <Content Include="bin\it\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\it\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\it\System.Spatial.resources.dll" />
+    <Content Include="bin\ja\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\ja\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\ja\System.Spatial.resources.dll" />
+    <Content Include="bin\ko\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\ko\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\ko\System.Spatial.resources.dll" />
+    <Content Include="bin\Microsoft.Data.Edm.dll" />
+    <Content Include="bin\Microsoft.Data.Edm.xml" />
+    <Content Include="bin\Microsoft.Data.OData.dll" />
+    <Content Include="bin\Microsoft.Data.OData.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
+    <Content Include="bin\Microsoft.Web.WebPages.OAuth.dll" />
+    <Content Include="bin\Microsoft.Web.WebPages.OAuth.xml" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\PagedList.dll" />
+    <Content Include="bin\PagedList.Mvc.dll" />
+    <Content Include="bin\PagedList.Mvc.xml" />
+    <Content Include="bin\PagedList.xml" />
+    <Content Include="bin\QuickySaleOnlineShopper.dll" />
+    <Content Include="bin\QuickySaleOnlineShopper.pdb" />
+    <Content Include="bin\ru\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\ru\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\ru\System.Spatial.resources.dll" />
+    <Content Include="bin\System.Spatial.dll" />
+    <Content Include="bin\System.Spatial.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.OData.dll" />
+    <Content Include="bin\System.Web.Http.OData.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\WebMatrix.Data.dll" />
+    <Content Include="bin\WebMatrix.Data.xml" />
+    <Content Include="bin\WebMatrix.WebData.dll" />
+    <Content Include="bin\WebMatrix.WebData.xml" />
+    <Content Include="bin\zh-Hans\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Spatial.resources.dll" />
+    <Content Include="bin\zh-Hant\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\zh-Hant\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\zh-Hant\System.Spatial.resources.dll" />
+    <Content Include="Content\B.Images\backg1.png" />
+    <Content Include="Content\B.Images\backg10.jpg" />
+    <Content Include="Content\B.Images\backg11.jpg" />
+    <Content Include="Content\B.Images\backg12.jpg" />
+    <Content Include="Content\B.Images\backg13.jpg" />
+    <Content Include="Content\B.Images\backg14.jpg" />
+    <Content Include="Content\B.Images\backg15.jpg" />
+    <Content Include="Content\B.Images\backg2.jpg" />
+    <Content Include="Content\B.Images\backg3.jpg" />
+    <Content Include="Content\B.Images\backg4.jpg" />
+    <Content Include="Content\B.Images\backg5.jpg" />
+    <Content Include="Content\B.Images\backg6.jpg" />
+    <Content Include="Content\B.Images\backg7.jpg" />
+    <Content Include="Content\B.Images\backg8.jpg" />
+    <Content Include="Content\B.Images\backg8Tablet.jpg" />
+    <Content Include="Content\B.Images\backg9.jpg" />
+    <Content Include="Content\B.Images\mulitcolour2.png" />
+    <Content Include="Content\B.Images\multicolo3.jpg" />
+    <Content Include="Content\B.Images\multicolor1.jpg" />
+    <Content Include="Content\B.Images\multicolor4.jpg" />
+    <Content Include="Content\B.Images\multicolor5.jpg" />
+    <Content Include="Content\B.Images\multicolor6.jpg" />
+    <Content Include="Content\B.Images\multicolor7.jpg" />
+    <Content Include="Content\B.Images\multicolor8.jpg" />
+    <Content Include="Content\B.Images\white10.png" />
+    <Content Include="Content\B.Images\white10B.png" />
+    <Content Include="Content\B.Images\white11.png" />
+    <Content Include="Content\B.Images\white11B.png" />
+    <Content Include="Content\B.Images\white12.png" />
+    <Content Include="Content\B.Images\white12B.png" />
+    <Content Include="Content\B.Images\white13.jpg" />
+    <Content Include="Content\B.Images\white13.png" />
+    <Content Include="Content\B.Images\white13B.png" />
+    <Content Include="Content\B.Images\white2.png" />
+    <Content Include="Content\B.Images\white3.png" />
+    <Content Include="Content\B.Images\white4.png" />
+    <Content Include="Content\B.Images\white6.jpg" />
+    <Content Include="Content\B.Images\white6.png" />
+    <Content Include="Content\B.Images\white7.jpg" />
+    <Content Include="Content\B.Images\white7.png" />
+    <Content Include="Content\B.Images\white7B.png" />
+    <Content Include="Content\B.Images\white8.png" />
+    <Content Include="Content\B.Images\white8A.png" />
+    <Content Include="Content\B.Images\white8B.png" />
+    <Content Include="Content\B.Images\white9.png" />
+    <Content Include="Content\B.Images\white9B.png" />
+    <Content Include="Content\B.Images\whitebox1.png" />
+    <Content Include="Content\Images\3ballerinatea.png" />
+    <Content Include="Content\Images\3crownpowdermilk.png" />
+    <Content Include="Content\Images\5alivebreakabel.png" />
+    <Content Include="Content\Images\5aliveplastic.png" />
+    <Content Include="Content\Images\aeroplanebasmaticrice.png" />
+    <Content Include="Content\Images\afccracker.png" />
+    <Content Include="Content\Images\alwaysclassic.png" />
+    <Content Include="Content\Images\alwayslogo.jpg" />
+    <Content Include="Content\Images\alwayslogo.png" />
+    <Content Include="Content\Images\amstalmaltacan.jpg" />
+    <Content Include="Content\Images\amstalmaltacan.png" />
+    <Content Include="Content\Images\applesmall.jpg" />
+    <Content Include="Content\Images\applesmall.png" />
+    <Content Include="Content\Images\aquafinawater.png" />
+    <Content Include="Content\Images\aquafreshmilkteeth.png" />
+    <Content Include="Content\Images\arieldetergent.png" />
+    <Content Include="Content\Images\astonishhandwash.png" />
+    <Content Include="Content\Images\astonishspray.png" />
+    <Content Include="Content\Images\atarugupepper.png" />
+    <Content Include="Content\Images\ayoolapandoyam.png" />
+    <Content Include="Content\Images\B29soap.jpg" />
+    <Content Include="Content\Images\B29soap.png" />
+    <Content Include="Content\Images\bakedbeans.jpg" />
+    <Content Include="Content\Images\bakedbeans.png" />
+    <Content Include="Content\Images\bamamayonaise.png" />
+    <Content Include="Content\Images\banana.png" />
+    <Content Include="Content\Images\barondevallsalc.png" />
+    <Content Include="Content\Images\baronromeroalc.png" />
+    <Content Include="Content\Images\beansflour.png" />
+    <Content Include="Content\Images\bellefullnoodle.png" />
+    <Content Include="Content\Images\belletissue.png" />
+    <Content Include="Content\Images\belloxibiscuit.png" />
+    <Content Include="Content\Images\bingosilwash.png" />
+    <Content Include="Content\Images\birdcustard.png" />
+    <Content Include="Content\Images\bitterleaf.png" />
+    <Content Include="Content\Images\blackolives.png" />
+    <Content Include="Content\Images\blackpepper.png" />
+    <Content Include="Content\Images\bluebandbutter.jpg" />
+    <Content Include="Content\Images\bluebandbutter.png" />
+    <Content Include="Content\Images\bobokids.jpg" />
+    <Content Include="Content\Images\bobokids.png" />
+    <Content Include="Content\Images\boboorange.png" />
+    <Content Include="Content\Images\bobopineapple.png" />
+    <Content Include="Content\Images\bobostrawberry.png" />
+    <Content Include="Content\Images\bodybkg.gif" />
+    <Content Include="Content\Images\bottledwater.png" />
+    <Content Include="Content\Images\bournvitasachet.jpg" />
+    <Content Include="Content\Images\bournvitasachet.png" />
+    <Content Include="Content\Images\bread.jpg" />
+    <Content Include="Content\Images\butter.png" />
+    <Content Include="Content\Images\cabbage.png" />
+    <Content Include="Content\Images\camerounpepper.jpg" />
+    <Content Include="Content\Images\camerounpepper.png" />
+    <Content Include="Content\Images\canoesoap.png" />
+    <Content Include="Content\Images\canoesoapunwrapped.png" />
+    <Content Include="Content\Images\capricerice.png" />
+    <Content Include="Content\Images\capricericenormal.png" />
+    <Content Include="Content\Images\caprisone.png" />
+    <Content Include="Content\Images\cartonOfCaprison.jpg" />
+    <Content Include="Content\Images\cartonOfCaprisone.png" />
+    <Content Include="Content\Images\cartonofharpcan.png" />
+    <Content Include="Content\Images\cartonOfNoodle.png" />
+    <Content Include="Content\Images\cartonOfRibena.png" />
+    <Content Include="Content\Images\cartonpeaksachet.png" />
+    <Content Include="Content\Images\cartonpeaktinmilk.png" />
+    <Content Include="Content\Images\carwashliquid.png" />
+    <Content Include="Content\Images\cashewnuts.png" />
+    <Content Include="Content\Images\ceresbreakable.png" />
+    <Content Include="Content\Images\cestbon.png" />
+    <Content Include="Content\Images\chapman.jpg" />
+    <Content Include="Content\Images\chapman.png" />
+    <Content Include="Content\Images\chicken.png" />
+    <Content Include="Content\Images\chickensausage.jpg" />
+    <Content Include="Content\Images\chickensausage.png" />
+    <Content Include="Content\Images\chiexotic50cl.png" />
+    <Content Include="Content\Images\chiexoticbanana.png" />
+    <Content Include="Content\Images\chiexoticbreakable.png" />
+    <Content Include="Content\Images\chiexoticguava.png" />
+    <Content Include="Content\Images\chiexotickid.png" />
+    <Content Include="Content\Images\chiexoticmango.png" />
+    <Content Include="Content\Images\chiexoticmultifruta.png" />
+    <Content Include="Content\Images\chiexoticorangeandcoconut.png" />
+    <Content Include="Content\Images\chiexoticorangeandpeach.png" />
+    <Content Include="Content\Images\chiexoticorngewithpulp.png" />
+    <Content Include="Content\Images\chiexoticpineappleandpapaya.png" />
+    <Content Include="Content\Images\chiexotictropicalfruit.png" />
+    <Content Include="Content\Images\chilisauce.png" />
+    <Content Include="Content\Images\chivita1ltre.png" />
+    <Content Include="Content\Images\chivita50cl.png" />
+    <Content Include="Content\Images\chivitaactive.png" />
+    <Content Include="Content\Images\chivitakids.jpg" />
+    <Content Include="Content\Images\chivitakids.png" />
+    <Content Include="Content\Images\chivitamango.png" />
+    <Content Include="Content\Images\chivitamangoandorange.png" />
+    <Content Include="Content\Images\chivitaorange.png" />
+    <Content Include="Content\Images\chivitaorangeandpineapple.png" />
+    <Content Include="Content\Images\chivitapineapple.png" />
+    <Content Include="Content\Images\cifcream.png" />
+    <Content Include="Content\Images\ciffloor.png" />
+    <Content Include="Content\Images\clingfilm.png" />
+    <Content Include="Content\Images\closeup.png" />
+    <Content Include="Content\Images\closeupherbal.png" />
+    <Content Include="Content\Images\cocacolacan.png" />
+    <Content Include="Content\Images\cocacolazerobottle.png" />
+    <Content Include="Content\Images\coconutmilk.png" />
+    <Content Include="Content\Images\cocopopscereal.png" />
+    <Content Include="Content\Images\colemanmustardcream.png" />
+    <Content Include="Content\Images\colgate.png" />
+    <Content Include="Content\Images\colgate2yrs.png" />
+    <Content Include="Content\Images\comfortwash.png" />
+    <Content Include="Content\Images\coriander.png" />
+    <Content Include="Content\Images\cornbeef.png" />
+    <Content Include="Content\Images\cornedbeef.jpg" />
+    <Content Include="Content\Images\cornedbeef.png" />
+    <Content Include="Content\Images\cornflour.png" />
+    <Content Include="Content\Images\costaseasalt.png" />
+    <Content Include="Content\Images\cowbellchocolatesachet.png" />
+    <Content Include="Content\Images\cowngate1.png" />
+    <Content Include="Content\Images\cowngate2.png" />
+    <Content Include="Content\Images\cowngate3.jpg" />
+    <Content Include="Content\Images\cowngate3.png" />
+    <Content Include="Content\Images\cowngatelogo.png" />
+    <Content Include="Content\Images\cowtail.png" />
+    <Content Include="Content\Images\crackers.png" />
+    <Content Include="Content\Images\crayfish.png" />
+    <Content Include="Content\Images\croakerfish.png" />
+    <Content Include="Content\Images\crunchynutcereal.png" />
+    <Content Include="Content\Images\cucumber.png" />
+    <Content Include="Content\Images\curry.jpg" />
+    <Content Include="Content\Images\currybig.png" />
+    <Content Include="Content\Images\daburherbaltoothpaste.png" />
+    <Content Include="Content\Images\danawater.png" />
+    <Content Include="Content\Images\dangotesaltbig.png" />
+    <Content Include="Content\Images\dangotesaltsmall.png" />
+    <Content Include="Content\Images\dangotespaghetti.png" />
+    <Content Include="Content\Images\danishcookies.png" />
+    <Content Include="Content\Images\danosachetmilk.png" />
+    <Content Include="Content\Images\dereicasachet.png" />
+    <Content Include="Content\Images\dericatomatoetin.png" />
+    <Content Include="Content\Images\deroyalnoodle.png" />
+    <Content Include="Content\Images\dettoldisinfectant.png" />
+    <Content Include="Content\Images\dettollemonliquid.png" />
+    <Content Include="Content\Images\dettolsoap.png" />
+    <Content Include="Content\Images\digestivebiscuit.jpg" />
+    <Content Include="Content\Images\digestivebiscuit.png" />
+    <Content Include="Content\Images\dovesoap.png" />
+    <Content Include="Content\Images\drbrownpad.jpg" />
+    <Content Include="Content\Images\drbrownpad.png" />
+    <Content Include="Content\Images\driedcatfish.png" />
+    <Content Include="Content\Images\driedpepper.jpg" />
+    <Content Include="Content\Images\driedpepper.png" />
+    <Content Include="Content\Images\drostchyhoffalc.png" />
+    <Content Include="Content\Images\egg2.png" />
+    <Content Include="Content\Images\eggplant.jpg" />
+    <Content Include="Content\Images\eggplant.png" />
+    <Content Include="Content\Images\Eggs.png" />
+    <Content Include="Content\Images\egusi.png" />
+    <Content Include="Content\Images\evarednonalc.png" />
+    <Content Include="Content\Images\evawater.png" />
+    <Content Include="Content\Images\fairylemon.png" />
+    <Content Include="Content\Images\fairyoriginal.png" />
+    <Content Include="Content\Images\fantacan.png" />
+    <Content Include="Content\Images\farowater.png" />
+    <Content Include="Content\Images\fayrouzebottle.png" />
+    <Content Include="Content\Images\febreezeairfreshner.png" />
+    <Content Include="Content\Images\flavorcharm.png" />
+    <Content Include="Content\Images\flour.png" />
+    <Content Include="Content\Images\foilpaper.png" />
+    <Content Include="Content\Images\freshcarrot.png" />
+    <Content Include="Content\Images\freshcatfish.jpg" />
+    <Content Include="Content\Images\freshcatfish.png" />
+    <Content Include="Content\Images\freshcelery.png" />
+    <Content Include="Content\Images\freshcoriander.png" />
+    <Content Include="Content\Images\freshcurryleaf.png" />
+    <Content Include="Content\Images\freshginger.png" />
+    <Content Include="Content\Images\freshgreenpeas.png" />
+    <Content Include="Content\Images\freshgreenpepper.png" />
+    <Content Include="Content\Images\freshleek.png" />
+    <Content Include="Content\Images\freshmintleaves.png" />
+    <Content Include="Content\Images\freshparsely.png" />
+    <Content Include="Content\Images\freshscentleaf.png" />
+    <Content Include="Content\Images\freshyo.png" />
+    <Content Include="Content\Images\friedriceprice.png" />
+    <Content Include="Content\Images\frisogoldrice.png" />
+    <Content Include="Content\Images\frisogoldwheat.png" />
+    <Content Include="Content\Images\frozenshrimps.jpg" />
+    <Content Include="Content\Images\frozenshrimps.png" />
+    <Content Include="Content\Images\fruitnfibrecereal.png" />
+    <Content Include="Content\Images\fruta1litre.png" />
+    <Content Include="Content\Images\gardenegg.png" />
+    <Content Include="Content\Images\garlicfullbag.jpg" />
+    <Content Include="Content\Images\garlicfullbag.png" />
+    <Content Include="Content\Images\garlichalfbag.jpg" />
+    <Content Include="Content\Images\garlichalfbag.png" />
+    <Content Include="Content\Images\garlicpowder.png" />
+    <Content Include="Content\Images\gingerbeercan.png" />
+    <Content Include="Content\Images\gingerpowder.png" />
+    <Content Include="Content\Images\ginomacaroni.png" />
+    <Content Include="Content\Images\ginosachet.png" />
+    <Content Include="Content\Images\ginotin.png" />
+    <Content Include="Content\Images\goat.jpg" />
+    <Content Include="Content\Images\goat.png" />
+    <Content Include="Content\Images\goldenmorn.png" />
+    <Content Include="Content\Images\goldenpennycouscous.png" />
+    <Content Include="Content\Images\goldenpennysemovita.jpg" />
+    <Content Include="Content\Images\goldenpennysemovita.png" />
+    <Content Include="Content\Images\goldenpennysemovita2.png" />
+    <Content Include="Content\Images\goldenpennysufar.png" />
+    <Content Include="Content\Images\goldensellabasmaticrice.png" />
+    <Content Include="Content\Images\goodmrngcornflakes.png" />
+    <Content Include="Content\Images\grand1ltr.png" />
+    <Content Include="Content\Images\grandmalt.png" />
+    <Content Include="Content\Images\grandmaltcan.png" />
+    <Content Include="Content\Images\grandoil2.7litr.png" />
+    <Content Include="Content\Images\grandoil4ltr.png" />
+    <Content Include="Content\Images\grandoilbig.png" />
+    <Content Include="Content\Images\greenbeans.png" />
+    <Content Include="Content\Images\greenolives.png" />
+    <Content Include="Content\Images\greenpeas.jpg" />
+    <Content Include="Content\Images\greenpeas.png" />
+    <Content Include="Content\Images\happyhourjuice.png" />
+    <Content Include="Content\Images\happyhourtropicalfruit.png" />
+    <Content Include="Content\Images\harpic.png" />
+    <Content Include="Content\Images\heinekencan.png" />
+    <Content Include="Content\Images\heinzbabayfood.jpg" />
+    <Content Include="Content\Images\heinzbabayfood.png" />
+    <Content Include="Content\Images\heinzketchup.png" />
+    <Content Include="Content\Images\heinzsaladcream.png" />
+    <Content Include="Content\Images\herbaltoothpaste.png" />
+    <Content Include="Content\Images\hobnobsbiscuit.png" />
+    <Content Include="Content\Images\hollandiacustard.png" />
+    <Content Include="Content\Images\hollandiamilk.jpg" />
+    <Content Include="Content\Images\hollandiamilk.png" />
+    <Content Include="Content\Images\hollandiapineapple.png" />
+    <Content Include="Content\Images\hollandiastrawberry.png" />
+    <Content Include="Content\Images\honeywellsemolina.png" />
+    <Content Include="Content\Images\honeywellwheat.png" />
+    <Content Include="Content\Images\hotdog.png" />
+    <Content Include="Content\Images\huggieswipes.png" />
+    <Content Include="Content\Images\hwataicracker.jpg" />
+    <Content Include="Content\Images\hwataicracker.png" />
+    <Content Include="Content\Images\hypobleach.png" />
+    <Content Include="Content\Images\icedfish.png" />
+    <Content Include="Content\Images\icons-18-black.png" />
+    <Content Include="Content\Images\icons-18-white.png" />
+    <Content Include="Content\Images\icons-36-black.png" />
+    <Content Include="Content\Images\icons-36-white.png" />
+    <Content Include="Content\Images\ijebugari.png" />
+    <Content Include="Content\Images\image4144.png" />
+    <Content Include="Content\Images\indomiechicken.png" />
+    <Content Include="Content\Images\indomiehungrymanct.png" />
+    <Content Include="Content\Images\indomiehungrymanpk.png" />
+    <Content Include="Content\Images\indomieonion.png" />
+    <Content Include="Content\Images\indomieonionct.png" />
+    <Content Include="Content\Images\irishpotatoe.png" />
+    <Content Include="Content\Images\irishspring.png" />
+    <Content Include="Content\Images\izaldisinfectant.png" />
+    <Content Include="Content\Images\jacobcrackerbuscuit.png" />
+    <Content Include="Content\Images\jacobscracker.jpg" />
+    <Content Include="Content\Images\jacobwafercracker.png" />
+    <Content Include="Content\Images\jam.png" />
+    <Content Include="Content\Images\jellofriceprice.png" />
+    <Content Include="Content\Images\jikbleach.png" />
+    <Content Include="Content\Images\jnwcocktailnonalc.png" />
+    <Content Include="Content\Images\johnsonwipes.png" />
+    <Content Include="Content\Images\juliesbuttercracker.png" />
+    <Content Include="Content\Images\justbutter.png" />
+    <Content Include="Content\Images\kagoralc.png" />
+    <Content Include="Content\Images\kellogscornflakes.png" />
+    <Content Include="Content\Images\kerkcracker.png" />
+    <Content Include="Content\Images\kingspalmoil.jpg" />
+    <Content Include="Content\Images\kingspalmoil.png" />
+    <Content Include="Content\Images\klin100g.png" />
+    <Content Include="Content\Images\knowchickenpk.png" />
+    <Content Include="Content\Images\kpomo.png" />
+    <Content Include="Content\Images\lacaseraplastic.png" />
+    <Content Include="Content\Images\lactogen.jpg" />
+    <Content Include="Content\Images\ladycarepad.png" />
+    <Content Include="Content\Images\lalqillabasmaticrice.png" />
+    <Content Include="Content\Images\laserhoney.png" />
+    <Content Include="Content\Images\laseroil.png" />
+    <Content Include="Content\Images\laseroliveoil.png" />
+    <Content Include="Content\Images\laseroliveoilsmall.png" />
+    <Content Include="Content\Images\legendtea.png" />
+    <Content Include="Content\Images\leisureoilbig.png" />
+    <Content Include="Content\Images\leisureoilsmall.png" />
+    <Content Include="Content\Images\lettuce.jpg" />
+    <Content Include="Content\Images\lettuce.png" />
+    <Content Include="Content\Images\liptontea.png" />
+    <Content Include="Content\Images\liquidmilk.png" />
+    <Content Include="Content\Images\liquidpeakmilk.png" />
+    <Content Include="Content\Images\localpap.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\loyasachet.png" />
+    <Content Include="Content\Images\lucozadebig.png" />
+    <Content Include="Content\Images\lucozadepk.jpg" />
+    <Content Include="Content\Images\lucozadepk.png" />
+    <Content Include="Content\Images\lucozadeplastic.png" />
+    <Content Include="Content\Images\lucozadetriangle.png" />
+    <Content Include="Content\Images\luxsoap.png" />
+    <Content Include="Content\Images\macaroni.png" />
+    <Content Include="Content\Images\macleanstoothpaste.png" />
+    <Content Include="Content\Images\maggipk.png" />
+    <Content Include="Content\Images\maharanibasmaticrice.png" />
+    <Content Include="Content\Images\maltaguinesscan.png" />
+    <Content Include="Content\Images\maltinacan.jpg" />
+    <Content Include="Content\Images\maltinacan.png" />
+    <Content Include="Content\Images\maltinaplastic.jpg" />
+    <Content Include="Content\Images\maltinaplastic.png" />
+    <Content Include="Content\Images\maltinaspit.png" />
+    <Content Include="Content\Images\mamagold50kg.png" />
+    <Content Include="Content\Images\mamagold5kg.png" />
+    <Content Include="Content\Images\mamagoldrice.png" />
+    <Content Include="Content\Images\mamalemonlogo.png" />
+    <Content Include="Content\Images\marvelmilkbig.png" />
+    <Content Include="Content\Images\marvelmilksmall.png" />
+    <Content Include="Content\Images\marylandcookies.png" />
+    <Content Include="Content\Images\meatpieces.png" />
+    <Content Include="Content\Images\meatwhole.png" />
+    <Content Include="Content\Images\milletpap.jpg" />
+    <Content Include="Content\Images\milletpap.png" />
+    <Content Include="Content\Images\millvilleoats.png" />
+    <Content Include="Content\Images\milocereal.png" />
+    <Content Include="Content\Images\milodrink.png" />
+    <Content Include="Content\Images\milosachet.png" />
+    <Content Include="Content\Images\mincedmeat.png" />
+    <Content Include="Content\Images\mirindapk.png" />
+    <Content Include="Content\Images\mixeddrinks.png" />
+    <Content Include="Content\Images\moibutter.png" />
+    <Content Include="Content\Images\morningfreshantibacterial.png" />
+    <Content Include="Content\Images\morningfreshoriginal.png" />
+    <Content Include="Content\Images\mountaindewbotle.png" />
+    <Content Include="Content\Images\mowawater.jpg" />
+    <Content Include="Content\Images\mowawater.png" />
+    <Content Include="Content\Images\mrsdafur3in1.png" />
+    <Content Include="Content\Images\mrsdafur5in1.png" />
+    <Content Include="Content\Images\mrsdafurrectangle.png" />
+    <Content Include="Content\Images\mrsdafurSnack1.png" />
+    <Content Include="Content\Images\mrsheen.png" />
+    <Content Include="Content\Images\mushrooms.png" />
+    <Content Include="Content\Images\nanmilk1.png" />
+    <Content Include="Content\Images\nanmilk2.jpg" />
+    <Content Include="Content\Images\nanmilk2.png" />
+    <Content Include="Content\Images\nanmilk3.jpg" />
+    <Content Include="Content\Images\nanmilk3.png" />
+    <Content Include="Content\Images\nascocornflakes.png" />
+    <Content Include="Content\Images\natcocherryjam.png" />
+    <Content Include="Content\Images\natcojam.png" />
+    <Content Include="Content\Images\natcomangojam.png" />
+    <Content Include="Content\Images\natcopineapplejam.png" />
+    <Content Include="Content\Images\natcostrawberryjam.png" />
+    <Content Include="Content\Images\NdomieNoodle.png" />
+    <Content Include="Content\Images\nescafecoffedecaf.png" />
+    <Content Include="Content\Images\nescafecoffee.png" />
+    <Content Include="Content\Images\nestlebottlewater.png" />
+    <Content Include="Content\Images\nigerianrice.png" />
+    <Content Include="Content\Images\nondairycreamerbydairycleff.jpg" />
+    <Content Include="Content\Images\nondairycreamerbydairycleff.png" />
+    <Content Include="Content\Images\nutella.png" />
+    <Content Include="Content\Images\nutmeg.png" />
+    <Content Include="Content\Images\nutribom.png" />
+    <Content Include="Content\Images\nutribomlogo.png" />
+    <Content Include="Content\Images\nutrilac.png" />
+    <Content Include="Content\Images\nutrilac3fruit.png" />
+    <Content Include="Content\Images\nutrilacbanana.png" />
+    <Content Include="Content\Images\nutrilachoney.png" />
+    <Content Include="Content\Images\nutrilacwheat.png" />
+    <Content Include="Content\Images\nutrilonbanana.jpg" />
+    <Content Include="Content\Images\nutrilonbanana.png" />
+    <Content Include="Content\Images\nutrilonmaize.png" />
+    <Content Include="Content\Images\nutrilonrice.png" />
+    <Content Include="Content\Images\nutrimilkapple.png" />
+    <Content Include="Content\Images\nutrimilkpear.png" />
+    <Content Include="Content\Images\nutrimilkpineapple.png" />
+    <Content Include="Content\Images\ogbono.png" />
+    <Content Include="Content\Images\okro.png" />
+    <Content Include="Content\Images\olaolapoundedyam.png" />
+    <Content Include="Content\Images\olaysoap.png" />
+    <Content Include="Content\Images\oldenburgermilk.jpg" />
+    <Content Include="Content\Images\oldenburgermilk.png" />
+    <Content Include="Content\Images\omo1kg.png" />
+    <Content Include="Content\Images\omo250kg.png" />
+    <Content Include="Content\Images\omo2kg.png" />
+    <Content Include="Content\Images\omobleach.png" />
+    <Content Include="Content\Images\onion.png" />
+    <Content Include="Content\Images\oralballroundprotection.png" />
+    <Content Include="Content\Images\oranges.png" />
+    <Content Include="Content\Images\ovaltine.png" />
+    <Content Include="Content\Images\ovaltinesachet.png" />
+    <Content Include="Content\Images\oysetersauce.png" />
+    <Content Include="Content\Images\packofchapmanbottle.png" />
+    <Content Include="Content\Images\packofcocacolabottle.png" />
+    <Content Include="Content\Images\packofFantaBottle.png" />
+    <Content Include="Content\Images\packOfMaltina.png" />
+    <Content Include="Content\Images\packofPepsi.png" />
+    <Content Include="Content\Images\packofspritebottle.png" />
+    <Content Include="Content\Images\packOfTeem.png" />
+    <Content Include="Content\Images\palm oil.jpg" />
+    <Content Include="Content\Images\palmkennel.jpg" />
+    <Content Include="Content\Images\palmkennel.png" />
+    <Content Include="Content\Images\palmoil.jpg" />
+    <Content Include="Content\Images\palmoil.png" />
+    <Content Include="Content\Images\palomapockettissue.png" />
+    <Content Include="Content\Images\panlafish.jpg" />
+    <Content Include="Content\Images\panlafish.png" />
+    <Content Include="Content\Images\parazonebleach.png" />
+    <Content Include="Content\Images\peak123sachet.png" />
+    <Content Include="Content\Images\peak123tin.png" />
+    <Content Include="Content\Images\peakpowderedmilk.png" />
+    <Content Include="Content\Images\peaksachet.jpg" />
+    <Content Include="Content\Images\peaksachet.png" />
+    <Content Include="Content\Images\peaksachet2.png" />
+    <Content Include="Content\Images\peaksmalltin.png" />
+    <Content Include="Content\Images\peppersoupspice.png" />
+    <Content Include="Content\Images\persil.png" />
+    <Content Include="Content\Images\persil10washes.png" />
+    <Content Include="Content\Images\persil120washes.png" />
+    <Content Include="Content\Images\persil23washes.png" />
+    <Content Include="Content\Images\persil45washes.png" />
+    <Content Include="Content\Images\pineapple.png" />
+    <Content Include="Content\Images\placeholder.gif" />
+    <Content Include="Content\Images\plantain.png" />
+    <Content Include="Content\Images\plantanflour.png" />
+    <Content Include="Content\Images\plumtomatoescan.png" />
+    <Content Include="Content\Images\powerhorsecan.png" />
+    <Content Include="Content\Images\poweroil1ltr.png" />
+    <Content Include="Content\Images\poweroil3ltr.png" />
+    <Content Include="Content\Images\premiersoap.png" />
+    <Content Include="Content\Images\presidentbasmaticrice.png" />
+    <Content Include="Content\Images\QSLogo16.png" />
+    <Content Include="Content\Images\QSLogo16A.png" />
+    <Content Include="Content\Images\QSLogo16Tablet.png" />
+    <Content Include="Content\Images\QSLogo6.png" />
+    <Content Include="Content\Images\QSLogo6M.png" />
+    <Content Include="Content\Images\quakeroats.png" />
+    <Content Include="Content\Images\quakeroatslong.png" />
+    <Content Include="Content\Images\quakeroatssachet.png" />
+    <Content Include="Content\Images\realmilk.png" />
+    <Content Include="Content\Images\RedBeans.png" />
+    <Content Include="Content\Images\redbeans2.png" />
+    <Content Include="Content\Images\redbullcan.png" />
+    <Content Include="Content\Images\redgari.png" />
+    <Content Include="Content\Images\redkidneybeans.png" />
+    <Content Include="Content\Images\ribenabig.png" />
+    <Content Include="Content\Images\ribenainbox.png" />
+    <Content Include="Content\Images\ribenaplastic.png" />
+    <Content Include="Content\Images\ribenatriangle.jpg" />
+    <Content Include="Content\Images\ribenatriangle.png" />
+    <Content Include="Content\Images\Rice.png" />
+    <Content Include="Content\Images\rice2.png" />
+    <Content Include="Content\Images\riceflour.png" />
+    <Content Include="Content\Images\ricekrispiescereal.png" />
+    <Content Include="Content\Images\roastedChicken.png" />
+    <Content Include="Content\Images\rosecarlatissue.png" />
+    <Content Include="Content\Images\rosetissue.jpg" />
+    <Content Include="Content\Images\rosetissue.png" />
+    <Content Include="Content\Images\rowsehoney.png" />
+    <Content Include="Content\Images\royalgoldrice.png" />
+    <Content Include="Content\Images\royalstallionrice.png" />
+    <Content Include="Content\Images\royaltyshortbread.png" />
+    <Content Include="Content\Images\roycopk.png" />
+    <Content Include="Content\Images\safeguardsoap.png" />
+    <Content Include="Content\Images\saladcream.png" />
+    <Content Include="Content\Images\samosa.png" />
+    <Content Include="Content\Images\saop.png" />
+    <Content Include="Content\Images\sardines.png" />
+    <Content Include="Content\Images\savlondisinfectant.png" />
+    <Content Include="Content\Images\selvaspaghetti.png" />
+    <Content Include="Content\Images\sensodynedailycare.jpg" />
+    <Content Include="Content\Images\sensodynedailycare.png" />
+    <Content Include="Content\Images\sensodyneextrafresh.png" />
+    <Content Include="Content\Images\septoldisinfectant.png" />
+    <Content Include="Content\Images\sesameoil.png" />
+    <Content Include="Content\Images\shombopepper.png" />
+    <Content Include="Content\Images\shortbreadbiscuit.jpg" />
+    <Content Include="Content\Images\shortbreadbiscuit.png" />
+    <Content Include="Content\Images\singleapple.png" />
+    <Content Include="Content\Images\skippypeanutbutter.png" />
+    <Content Include="Content\Images\skyflakescrackers.png" />
+    <Content Include="Content\Images\sma1babyfood.png" />
+    <Content Include="Content\Images\sma2babyfood.png" />
+    <Content Include="Content\Images\sma3babyfood.png" />
+    <Content Include="Content\Images\smirnoffBottle.png" />
+    <Content Include="Content\Images\sodacracker.jpg" />
+    <Content Include="Content\Images\sodacracker.png" />
+    <Content Include="Content\Images\soysauce.png" />
+    <Content Include="Content\Images\spaghetti.png" />
+    <Content Include="Content\Images\spinach.png" />
+    <Content Include="Content\Images\springonions.png" />
+    <Content Include="Content\Images\springrolls.png" />
+    <Content Include="Content\Images\spritecan.png" />
+    <Content Include="Content\Images\squeezedwhite.png" />
+    <Content Include="Content\Images\stlouissugar.png" />
+    <Content Include="Content\Images\stockfish.png" />
+    <Content Include="Content\Images\stockfishbody.png" />
+    <Content Include="Content\Images\stockfishhead.png" />
+    <Content Include="Content\Images\sunlightdetergent.png" />
+    <Content Include="Content\Images\superhoney.png" />
+    <Content Include="Content\Images\supremesemolina.png" />
+    <Content Include="Content\Images\swanwater.png" />
+    <Content Include="Content\Images\sweetcorn.jpg" />
+    <Content Include="Content\Images\sweetcorn.png" />
+    <Content Include="Content\Images\sweetpotatoe.png" />
+    <Content Include="Content\Images\tastytomsachet.png" />
+    <Content Include="Content\Images\tastytomtin.jpg" />
+    <Content Include="Content\Images\tastytomtin.png" />
+    <Content Include="Content\Images\tatasepepper.png" />
+    <Content Include="Content\Images\tenderizer.png" />
+    <Content Include="Content\Images\terrapeppersachet.png" />
+    <Content Include="Content\Images\tetmosolsoap.png" />
+    <Content Include="Content\Images\thunder.png" />
+    <Content Include="Content\Images\thymebig.png" />
+    <Content Include="Content\Images\thymemed.jpg" />
+    <Content Include="Content\Images\thymesmall.jpg" />
+    <Content Include="Content\Images\tilapiafish.png" />
+    <Content Include="Content\Images\tissue.jpg" />
+    <Content Include="Content\Images\tissue.png" />
+    <Content Include="Content\Images\toastedsoyflour.png" />
+    <Content Include="Content\Images\tomatoeketchup.png" />
+    <Content Include="Content\Images\tomatoes.jpg" />
+    <Content Include="Content\Images\tomatoes.png" />
+    <Content Include="Content\Images\topcrackerbiscuit.png" />
+    <Content Include="Content\Images\topteaginger.png" />
+    <Content Include="Content\Images\toptealime.png" />
+    <Content Include="Content\Images\toptealogo.jpg" />
+    <Content Include="Content\Images\toptealogo.png" />
+    <Content Include="Content\Images\topteaordinary.png" />
+    <Content Include="Content\Images\tropicalsunpeanutbutter.png" />
+    <Content Include="Content\Images\trsalmondnuts.png" />
+    <Content Include="Content\Images\trsbasmatirice.png" />
+    <Content Include="Content\Images\trspopcorn.png" />
+    <Content Include="Content\Images\tumeric.jpg" />
+    <Content Include="Content\Images\tumeric.png" />
+    <Content Include="Content\Images\tunafish.jpg" />
+    <Content Include="Content\Images\tunafish.png" />
+    <Content Include="Content\Images\turkeygizzard.png" />
+    <Content Include="Content\Images\turkeymeat.png" />
+    <Content Include="Content\Images\turkeyoil.png" />
+    <Content Include="Content\Images\turkeywings.jpg" />
+    <Content Include="Content\Images\turkeywings.png" />
+    <Content Include="Content\Images\uguleaves.png" />
+    <Content Include="Content\Images\unripeplantain.png" />
+    <Content Include="Content\Images\vijumilkapple.jpg" />
+    <Content Include="Content\Images\vijumilkapple.png" />
+    <Content Include="Content\Images\vijumilkchoco.jpg" />
+    <Content Include="Content\Images\vijumilkchoco.png" />
+    <Content Include="Content\Images\vijumilkorange.png" />
+    <Content Include="Content\Images\vitamilk.jpg" />
+    <Content Include="Content\Images\vitamilk.png" />
+    <Content Include="Content\Images\vitamilkenergy.png" />
+    <Content Include="Content\Images\wastebag.png" />
+    <Content Include="Content\Images\watermellon.png" />
+    <Content Include="Content\Images\weetabix.png" />
+    <Content Include="Content\Images\welchdrink.png" />
+    <Content Include="Content\Images\wessonoil.png" />
+    <Content Include="Content\Images\white9B.png" />
+    <Content Include="Content\Images\WhiteBeans.png" />
+    <Content Include="Content\Images\whitebeans2.png" />
+    <Content Include="Content\Images\whitebox1.png" />
+    <Content Include="Content\Images\whitebread.png" />
+    <Content Include="Content\Images\whitegari.jpg" />
+    <Content Include="Content\Images\whitegari.png" />
+    <Content Include="Content\Images\whitepap.jpg" />
+    <Content Include="Content\Images\whitepap.png" />
+    <Content Include="Content\Images\whitepepper.png" />
+    <Content Include="Content\Images\whitevinegar.png" />
+    <Content Include="Content\Images\windolene.png" />
+    <Content Include="Content\Images\yam.jpg" />
+    <Content Include="Content\Images\yam.png" />
+    <Content Include="Content\Images\yam5tuber.jpg" />
+    <Content Include="Content\Images\yam5tuber.png" />
+    <Content Include="Content\Images\yamsingle.png" />
+    <Content Include="Content\Images\yellowpap.png" />
+    <Content Include="Content\Images\yellowpepper.jpg" />
+    <Content Include="Content\Images\yellowpepper.png" />
+    <Content Include="Content\Images\zarmacaroni.png" />
+    <Content Include="Content\Images\zwanchicken.png" />
+    <Content Include="Content\Site_B.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="bin\QuickySaleOnlineShopper.dll.config" />
+    <None Include="Properties\PublishProfiles\QuickySale.pubxml" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\11.png" />
+    <Content Include="Images\11AB.png" />
+    <Content Include="Images\11BC.png" />
+    <Content Include="Images\12.png" />
+    <Content Include="Images\qs_11_qs_king.png" />
+    <Content Include="Images\qs_11_qs_LargeVegBackground.png" />
+    <Content Include="Images\qs_11_qs_veginBasket.png" />
+    <Content Include="Images\qs_11_qs_vegsDrawn.png" />
+    <Content Include="Images\qs_11_qs_vegsOnTable.png" />
+    <Content Include="Images\qs_11_specialofferQS1.png" />
+    <Content Include="Images\qs_11_vegwithCowImage.png" />
+    <Content Include="Images\thunder.png" />
+    <Content Include="Images\trolleylogo.png" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.mobile-1.1.2.js" />
+    <Content Include="Scripts\jquery.mobile-1.1.2.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Store\Browse.cshtml" />
+    <Content Include="Views\Store\Details.cshtml" />
+    <Content Include="Views\Store\Index.cshtml" />
+    <Content Include="Views\Store\SearchItem.cshtml" />
+    <Content Include="Views\Store\SubBrowse.cshtml" />
+    <Content Include="Views\ShoppingCart\EmptyCart.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.cshtml" />
+    <Content Include="Views\StoreManagerFoodItem\Create.cshtml" />
+    <Content Include="Views\StoreManagerFoodItem\Details.cshtml" />
+    <Content Include="Views\StoreManagerFoodItem\Edit.cshtml" />
+    <Content Include="Views\StoreManagerFoodItem\Index.cshtml" />
+    <Content Include="Views\Store\EmptyCart.cshtml" />
+    <Content Include="Views\ShoppingCart\CartSummary.cshtml" />
+    <Content Include="Views\Store\FoodGroupMenu.cshtml" />
+    <Content Include="Views\StoreManagerFoodGroup\Index.cshtml" />
+    <Content Include="Views\StoreManagerFoodGroup\Edit.cshtml" />
+    <Content Include="Views\StoreManagerSubFoodGroup\Index.cshtml" />
+    <Content Include="Views\StoreManagerSubFoodGroup\Create.cshtml" />
+    <Content Include="Views\StoreManagerSubFoodGroup\Edit.cshtml" />
+    <Content Include="Views\StoreManagerFoodWeight\Index.cshtml" />
+    <Content Include="Views\StoreManagerFoodWeight\Create.cshtml" />
+    <Content Include="Views\StoreManagerFoodGroup\Create.cshtml" />
+    <Content Include="Views\StoreManagerFoodWeight\Edit.cshtml" />
+    <Content Include="Views\StoreManagerSellerDetail\Index.cshtml" />
+    <Content Include="Views\StoreManagerSellerDetail\Create.cshtml" />
+    <Content Include="Views\StoreManagerSellerDetail\Edit.cshtml" />
+    <Content Include="Views\StoreManagerItems\Index.cshtml" />
+    <Content Include="Views\ShoppingCart\LoginDetail.cshtml" />
+    <Content Include="Views\ContactUs\Create.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
+    <Content Include="Views\CheckOut\Index.cshtml" />
+    <Content Include="Views\CheckOut\Create.cshtml" />
+    <Content Include="Views\CheckOut\Edit.cshtml" />
+    <Content Include="Views\CheckOut\Complete.cshtml" />
+    <Content Include="Views\CheckOut\Error.cshtml" />
+    <Content Include="Views\CheckOut\ErrorIndex.cshtml" />
+    <Content Include="Views\Shared\_ViewSwitcher.cshtml" />
+    <Content Include="Views\StoreManagerItems\Index.Mobile.cshtml" />
+    <Content Include="Views\Home\PromotionAd.cshtml" />
+    <Content Include="Views\CheckOut\NotUniqueEmailIndex.cshtml" />
+    <Content Include="Views\Store\ErrorEmptyGroup.cshtml" />
+    <Content Include="Views\CheckOut\CheckOutLogin.cshtml" />
+    <Content Include="Views\CheckOut\ForgotPassword.cshtml" />
+    <Content Include="Views\CheckOut\SendPasswordToCustomer.cshtml" />
+    <Content Include="Views\CheckOut\EmailError.cshtml" />
+    <Content Include="Views\CheckOut\CheckOutLogin.iPad.cshtml" />
+    <Content Include="Views\CheckOut\Create.iPad.cshtml" />
+    <Content Include="Views\CheckOut\Edit.iPad.cshtml" />
+    <Content Include="Views\CheckOut\ErrorIndex.iPad.cshtml" />
+    <Content Include="Views\CheckOut\Index.iPad.cshtml" />
+    <Content Include="Views\CheckOut\NotUniqueEmailIndex.iPad.cshtml" />
+    <Content Include="Views\ContactUs\Create.iPad.cshtml" />
+    <Content Include="Views\Home\Index.iPad.cshtml" />
+    <Content Include="Views\Shared\_Layout.iPad.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.iPad.cshtml" />
+    <Content Include="Views\Store\Browse.iPad.cshtml" />
+    <Content Include="Views\Store\Details.iPad.cshtml" />
+    <Content Include="Views\Store\ErrorEmptyGroup.iPad.cshtml" />
+    <Content Include="Views\Store\FoodGroupMenu.iPad.cshtml" />
+    <Content Include="Views\Store\Index.iPad.cshtml" />
+    <Content Include="Views\Store\SearchItem.iPad.cshtml" />
+    <Content Include="Views\Store\SubBrowse.iPad.cshtml" />
+    <Content Include="Views\Home\PromotionAd.iPad.cshtml" />
+    <Content Include="Views\Home\Index.Mobile.cshtml" />
+    <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.Mobile.cshtml" />
+    <Content Include="Views\Store\Browse.Mobile.cshtml" />
+    <Content Include="Views\Store\Details.Mobile.cshtml" />
+    <Content Include="Views\Store\ErrorEmptyGroup.Mobile.cshtml" />
+    <Content Include="Views\Store\FoodGroupMenu.Mobile.cshtml" />
+    <Content Include="Views\Store\Index.Mobile.cshtml" />
+    <Content Include="Views\Store\SearchItem.Mobile.cshtml" />
+    <Content Include="Views\Store\SubBrowse.Mobile.cshtml" />
+    <Content Include="Views\CheckOut\CheckOutLogin.Mobile.cshtml" />
+    <Content Include="Views\CheckOut\Create.Mobile.cshtml" />
+    <Content Include="Views\CheckOut\Edit.Mobile.cshtml" />
+    <Content Include="Views\CheckOut\ErrorIndex.Mobile.cshtml" />
+    <Content Include="Views\CheckOut\Index.Mobile.cshtml" />
+    <Content Include="Views\CheckOut\NotUniqueEmailIndex.Mobile.cshtml" />
+    <Content Include="Views\ContactUs\Create.Mobile.cshtml" />
+    <Content Include="Views\Home\PromotionAd.Mobile.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{466dd3d0-686c-4d3e-abed-3d8d70f330c5}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7704</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/QuickySaleOnlineShopper</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:7704/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

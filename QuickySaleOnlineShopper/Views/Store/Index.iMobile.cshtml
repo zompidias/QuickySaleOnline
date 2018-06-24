@@ -1,0 +1,18 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.FoodGroup>
+
+@using QuickySaleOnlineShopper.Models;
+
+@{
+    ViewBag.Title = "QUICKY SALE";
+}
+<h3>QS ONLINE FOOD SHOPPER</h3>
+<b><small>Delivery in and around Abuja <br />This Site is Under Construction</small></b>
+<h4><em>Browse Store</em></h4>
+<ul data-role="listview">
+    @foreach (FoodGroup genre in @Model)
+    {
+        <li>@Html.ActionLink(genre.FoodGroupName, "Browse", new { id = genre.FoodGroupId })</li>
+    }
+</ul>
+
+

@@ -1,0 +1,33 @@
+﻿@model BusinessLayer.FoodGroup
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>FoodGroup</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FoodGroupName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FoodGroupName)
+            @Html.ValidationMessageFor(model => model.FoodGroupName)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

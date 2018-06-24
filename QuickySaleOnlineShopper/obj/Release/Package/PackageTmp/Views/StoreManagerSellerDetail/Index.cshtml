@@ -1,0 +1,78 @@
+﻿@model IEnumerable<BusinessLayer.QSSellerDetail>
+
+@{
+    ViewBag.Title = "Seller Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Create New Seller", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SellerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SellerState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SellerAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SellerPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SellerEmail)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.SellerAccountNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankId)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.SellerAccountName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SellerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SellerState)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.SellerAddress)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.SellerPhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SellerEmail)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.SellerAccountNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankId)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.SellerAccountName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SellerId })
+            @*@Html.ActionLink("Details", "Details", new { id=item.SellerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SellerId })*@
+        </td>
+    </tr>
+}
+
+</table>
+<div>
+    @Html.ActionLink("Back", "Index", "StoreManagerItems")
+</div>

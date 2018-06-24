@@ -1,0 +1,61 @@
+﻿@*@model IEnumerable<MVCQuickySale.Models.FoodItem>*@
+@model IEnumerable<BusinessLayer.FoodItem>
+
+@using QuickySaleOnlineShopper.Models
+@using QuickySaleOnlineShopper.CustomHTMLHelpers
+@helper Truncate(string
+input, int length)
+{
+    if (input.Length <= length)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0, length)<text>...</text>
+    }
+}
+@{
+    ViewBag.Title = "Search";
+}
+<h2>Search Result</h2>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Food Items</title>
+    <style>
+        ul#horizontallist li {
+            display: inline;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="genre">
+        @*<h2>Browsing Food Groups: @Model.FoodGroupName</h2>*@
+        <ul id="album-list">
+            @foreach (BusinessLayer.FoodItem genre in @Model)
+            {
+                foreach (var package in @ViewData["FoodWeightTypeName"] as List<FoodWeightType>)
+                {
+                    if (package.FoodWeightTypeId == genre.FoodWeightTypeId)
+                    {
+                        <li>
+                            <a href="@Url.Action("Details",new { id = genre.FoodItemId })">
+                                <img alt="@genre.AlternateText"
+                                     src="@Url.Content(genre.FoodPicture)" /><br />
+                                <span>@Truncate(@genre.FoodName, 15)  =N=@Html.DisplayFor(model => genre.FoodCost)<br />@package.FoodWeightTypeName </span>
+                            </a>
+
+                        </li>
+                    }
+                }
+            }
+           
+        </ul>
+        <p>
+            @Html.ActionLink("Back", "Index", "Home")
+        </p>
+    </div>
+</body>
+</html>

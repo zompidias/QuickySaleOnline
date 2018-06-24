@@ -1,0 +1,90 @@
+﻿@model BusinessLayer.QSSellerDetail
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    @*<fieldset>*@
+    @Html.HiddenFor(model => model.SellerId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SellerName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SellerName)
+            @Html.ValidationMessageFor(model => model.SellerName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SellerState)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SellerState)
+            @Html.ValidationMessageFor(model => model.SellerState)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SellerAddress)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SellerAddress)
+            @Html.ValidationMessageFor(model => model.SellerAddress)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SellerPhoneNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SellerPhoneNumber)
+            @Html.ValidationMessageFor(model => model.SellerPhoneNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SellerEmail)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SellerEmail)
+            @Html.ValidationMessageFor(model => model.SellerEmail)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SellerAccountNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SellerAccountNumber)
+            @Html.ValidationMessageFor(model => model.SellerAccountNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BankId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("BankId")
+            @Html.ValidationMessageFor(model => model.BankId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SellerAccountName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SellerAccountName)
+            @Html.ValidationMessageFor(model => model.SellerAccountName)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    @*</fieldset>*@
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

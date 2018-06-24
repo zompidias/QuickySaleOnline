@@ -1,0 +1,42 @@
+﻿@model BusinessLayer.SubFoodGroup
+
+@{
+    ViewBag.Title = "Edit Food SubGroup";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    
+
+        @Html.HiddenFor(model => model.SubFoodGroupId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SubFoodGroupName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SubFoodGroupName)
+            @Html.ValidationMessageFor(model => model.SubFoodGroupName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FoodGroupId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("FoodGroupId")
+            @Html.ValidationMessageFor(model => model.FoodGroupId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+   
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

@@ -1,0 +1,89 @@
+﻿@*@model IEnumerable<BusinessLayer.StoreCart>*@
+@model IEnumerable<QuickySaleOnlineShopper.Models.StoreCart>
+@using QuickySaleOnlineShopper.Models;
+@{
+    ViewBag.Title = "Delivery ONLY to Abuja and its enirons for Now Please......";
+}
+
+<h2>@ViewBag.Title</h2>
+
+</br>
+</br>
+<p>
+  <b><strong>  @Html.ActionLink("Click Here To Place Order", "ProceedToCheckOut", "CheckOut")</strong></b>
+</p>
+</br>
+</br>
+<table>
+    <tr>
+        <th>
+            Food Name
+        </th>
+        <th>
+            Price (each)
+        </th>
+        <th>
+            Quantity
+        </th>
+        <th></th>
+    </tr>
+    @{ decimal TotalCount = 0;
+     decimal TotalAmount = 0;
+     decimal deliveryCost = 0;
+     decimal TotalPaymentDue = 0;
+
+     foreach (var item in Model)
+     {
+         using (Html.BeginForm("Delete", "ShoppingCart", new { deleteId = item.RecordId }))
+         {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.FoodItems.FoodName, "Details", "Store", new { id = item.FoodItemId }, null)
+                </td>
+                <td>
+                    @item.FoodItems.FoodCost
+                </td>
+                <td>
+                    @item.Count
+                </td>
+                <td>
+                    @Html.ActionLink("Increase", "Increase", new { increaseId = item.RecordId }) |
+                    @Html.ActionLink("Decrease", "Decrease", new { decreaseId = item.RecordId }) |
+                    @*@Html.ActionLink("Delete", "Delete", new { deleteId = item.RecordId })*@
+                    @*</td>*@
+                    @*<td><input type="submit" value="Increase" formaction="@Url.Action("Increase", new { increaseId = item.RecordId })" /></td>
+                        <td><input type="submit" value="Decrease" formaction="@Url.Action("Decrease", new { decreaseId = item.RecordId })" /></td>*@
+                    @*<td>*@<input type="submit" value="Remove"
+                                   onclick="return confirm('Are you sure you want to Delete FoodItem = @item.FoodItems.FoodName')" />
+                </td>
+            </tr>
+             TotalAmount = TotalAmount + (@item.FoodItems.FoodCost * @item.Count);
+             TotalCount = TotalCount + @item.Count;             //@Html.ActionLink(item.FoodItems.FoodName, "Details", "Store", new { id = item.FoodItemId }, null)
+             if (@TotalCount > 2)
+                 // {
+                 @deliveryCost = 1000;
+             // <td></td>
+             //}
+             else
+                 //{
+                 @deliveryCost = 1000;
+             //}
+
+         }
+
+     }
+     TotalPaymentDue = TotalAmount + deliveryCost;
+
+    <p>
+        <b>Total Item Count: </b> @TotalCount<br />
+        <b>Total Item Cost: =N=</b> @TotalAmount<br />
+        <b>Delivery Cost is =N=@deliveryCost</b>   <br />
+    </p>
+
+        <p><b>Total Payment Due on Delivery =N=@TotalPaymentDue</b></p>
+    }
+</table>
+
+<p>
+    @Html.ActionLink("Back to Store", "Index", "Home")
+</p>

@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Error";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    We're Sorry, we've hit an unexpected error.
+    <a href="javascript:history.go(-1)">Click here</a>
+    if you'd like to go back and try that again
+
+    <div>
+        @Html.ActionLink("Back to Store", "Index", "Home")
+    </div>
+</p>

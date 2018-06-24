@@ -1,0 +1,50 @@
+﻿
+@model List<QuickySaleOnlineShopper.Models.FoodItem>
+
+
+@{
+    ViewBag.Title = "Quicky Sale Online Food Store";
+}
+@*<h2>@ViewBag.Title</h2> \*@
+@*</div>*@
+<div class="flashit">
+    <h2>Delivery in 2 working Days or less in Abuja ONLY...</h2>
+   <h3> For missing items in our Store, You have the option of making a List after Order is complete and send.
+    We shall include on delivery....</h3>
+</div>
+@*<div id="mainbody">*@
+    <div id="submain">
+        <div id="cf" style="top: 0; left: 0;" >
+            <img class=" bottom" src="~/Images/qs_11_vegwithCowImage.png" alt="QuickySale" style=" position: relative; top: 0; left: 0;">
+            <img class="middle" src="~/Images/qs_11_qs_veginBasket.png" alt="QuickySale" style=" height: initial; width: initial; margin-left: 278px; ">
+            @*<img class="top" src="~/Images/qs_11_qs_king.png" alt="QuickySale U R King" style=" width: 60%; margin-left: 227px; ">*@
+            <img class="top" src="~/Images/qs_11_specialofferQS1.png" alt="QuickySale U R King" style=" width: 60%; margin-left: 227px; ">
+        </div>
+
+        @*<div id="promotionthis" style='width: 100%;' >
+                @{
+
+                    <img class="top" src="~/Images/qs_11.png" alt="Promotion">;
+                    <img class="bottom" src="~/Images/qs_11_qs_veginBasket.png" alt="Promotion">;
+                // }
+
+            }
+
+            </div>*@
+        <div style="color:black">
+            <h3><em>Fresh</em> off the grill</h3>
+            <ul id="album-list-promo">
+                @foreach (var food in Model)
+                {
+                    <li>
+                        <a href="@Url.Action("Details", "Store",new { id = food.FoodItemId })">
+                            <img alt="@food.AlternateText"
+                                 src="@Url.Content(food.FoodPicture)" />
+                            <span>@food.FoodName  =N=@Html.DisplayFor(model => food.FoodCost)</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+@*</div>*@

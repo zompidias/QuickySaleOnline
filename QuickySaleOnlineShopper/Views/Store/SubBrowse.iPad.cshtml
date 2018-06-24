@@ -1,0 +1,62 @@
+﻿@model IEnumerable<QuickySaleOnlineShopper.Models.FoodItem>
+
+@using QuickySaleOnlineShopper.Models;
+@using QuickySaleOnlineShopper.CustomHTMLHelpers
+@helper Truncate(string
+input, int length)
+{
+    if (input.Length <= length)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0, length)<text>...</text>
+    }
+}
+@{
+    ViewBag.Title = "Browse";
+}
+
+<html>
+@*<head>
+     <meta name="viewport" content="width=device-width" />
+    <title>Food Items</title>
+         <style>
+             ul#horizontallist li {
+                 display: inline;
+             }
+         </style>
+
+     </head>*@
+<body>
+    <p>
+        @*@Html.ActionLink("Back", "Browse", new { id = @Model.First().FoodGroupId }, null)*@
+        @Html.ActionLink("Back", "Index", "Home")
+    </p>
+
+    <div class="genre">
+        <h3><em></em> Food Items</h3>
+
+        <ul id="album-list">
+            @foreach (FoodItem food in @Model)
+            {
+                <li>
+                    <a href="@Url.Action("Details",new { id = food.FoodItemId })">
+                        <img alt="@food.AlternateText"
+                             src="@Url.Content(food.FoodPicture)" /><br />
+                        <span>@Truncate(@food.FoodName, 15)  =N=@Html.DisplayFor(model => food.FoodCost) <br /> Sold By: @Truncate(@food.QSSellerDetail.SellerName, 20)  @Html.DisplayFor(model => food.FoodWeightType.FoodWeightTypeName)</span>
+                    </a>
+
+                </li>
+            }
+        </ul>
+    </div>
+    <p>
+        @*@Html.ActionLink("Back", "Browse", new { id = @Model.First().FoodGroupId }, null)*@
+        @Html.ActionLink("Back", "Index", "Home")
+
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿@model QuickySaleOnlineShopper.Models.FoodItem
+@using QuickySaleOnlineShopper.CustomHTMLHelpers
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@ViewBag.Title</h2>
+@*<body>
+    <div>
+        <fieldset>*@
+    <div id="album-details">
+        <ul style="color:black">
+
+            <div class="display-field">
+                @Html.Image(@Model.FoodPicture, @Model.AlternateText)
+                @*@Html.DisplayFor(model => model.FoodPicture)*@
+            </div>
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.FoodName)
+            </div>*@
+            <p>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.FoodName)
+                </div>
+            </p>
+
+
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.FoodGroupId)
+            </div>*@
+            @*<div class="display-field">
+                @Html.DisplayNameFor(model => model.FoodGroupId): @Html.DisplayFor(model => model.FoodGroup.FoodGroupName)
+            </div>*@
+
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.SubFoodGroupId)
+            </div>*@
+            @*<div class="display-field">
+                @Html.DisplayNameFor(model => model.SubFoodGroupId): @Html.DisplayFor(model => model.SubFoodGroup.SubFoodGroupName)
+            </div>*@
+
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.FoodCost)
+            </div>*@
+            <div class="display-field">
+                @Html.DisplayNameFor(model => model.FoodCost): =N=@Html.DisplayFor(model => model.FoodCost)
+
+
+                @*@Html.DisplayNameFor(model => model.FoodCost): @Html.DisplayFor(model => model.FoodCost)*@
+            </div>
+
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.FoodWeightTypeId)
+            </div>*@
+            <div class="display-field">
+                @Html.DisplayNameFor(model => model.FoodWeightTypeId): @Html.DisplayFor(model => model.FoodWeightType.FoodWeightTypeName)
+            </div>
+
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.QuantityAvailable)
+            </div>*@
+            @*<div class="display-field">
+                @Html.DisplayNameFor(model => model.QuantityAvailable): @Html.DisplayFor(model => model.QuantityAvailable)
+            </div>*@
+
+            @*<div class="display-label">
+                 @Html.DisplayNameFor(model => model.SellerId)
+            </div>*@
+            <div class="display-field">
+                @Html.DisplayNameFor(model => model.SellerId): @Html.DisplayFor(model => model.QSSellerDetail.SellerName)
+            </div>
+            </ul>
+</div>
+
+<p class="button">
+        @Html.ActionLink("Add to Cart", "AddToCart", "ShoppingCart", new { id = @Model.FoodItemId }, "")
+    </p>
+    <p class="button">
+        @Html.ActionLink("View Cart", "Index", "ShoppingCart", new { fooditem = @Model }, "")
+
+
+    </p>
+
+
+
+    @*</fieldset>
+        </div>
+        </body>*@
+    <p>
+        @Html.ActionLink("Back", "SubBrowse", "Store", new { id = Model.SubFoodGroupId }, null)
+        @*@Html.ActionLink("Back To Store", "Index", "Home")*@
+    </p>

@@ -1,0 +1,51 @@
+﻿@model QuickySaleOnlineShopper.Models.LoginModel
+
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    Click to @Html.ActionLink("Register", "Create")<br />
+    Click to @Html.ActionLink("Update Existing Pofile", "Edit") <br />
+    after you have logged In
+</p>
+
+@using (Html.BeginForm("CheckOutLogIn", "CheckOut"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <ul data-role="listview" data-inset="false">
+        <li>
+            <div class="editor-label">
+                Email Address
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.UserName)
+                @Html.ValidationMessageFor(model => model.UserName)
+            </div>
+        </li>
+        <li>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Password)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+        </li>
+    </ul>
+
+    <p>
+        <input type="submit" value="LogIn" data-role="button" data-icon="grid" />
+    </p>
+    @*</fieldset>*@
+}
+
+<div>
+    @Html.ActionLink("Back to Store", "Index", "Store")
+</div>
+
+

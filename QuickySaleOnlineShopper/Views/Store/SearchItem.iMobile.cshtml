@@ -1,0 +1,51 @@
+﻿@*@model IEnumerable<MVCQuickySale.Models.FoodItem>*@
+@model IEnumerable<BusinessLayer.FoodItem>
+
+@using QuickySaleOnlineShopper.Models
+@using QuickySaleOnlineShopper.CustomHTMLHelpers
+@using System
+@using System.Collections.Generic
+@using System.Configuration
+
+@{
+    ViewBag.Title = "Search";
+}
+<h2>Search Result</h2>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Food Items</title>
+    <style>
+        ul#horizontallist li {
+            display: inline;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        @*<h2>Browsing Food Groups: @Model.FoodGroupName</h2>*@
+        <ul data-role="listview" data-inset="false">
+            @foreach (BusinessLayer.FoodItem food in @Model)
+            {
+                foreach (var package in @ViewData["FoodWeightTypeName"] as List<FoodWeightType>)
+                {
+                    if (package.FoodWeightTypeId == food.FoodWeightTypeId) {     
+                <li data-role ="list-divider">
+                    <a href="@Url.Action("Details",new { id = food.FoodItemId })">
+                        <img alt="@food.AlternateText"
+                             src="@Url.Content(food.FoodPicture)" /><br />
+                        <span>@food.FoodName  =N=@Html.DisplayFor(model => food.FoodCost) <br />@package.FoodWeightTypeName</span>
+                    </a>
+
+                    </li>
+            }
+            }
+            }
+        </ul>
+        <p>
+            @Html.ActionLink("Back", "Index", "Store")
+        </p>
+    </div>
+</body>
+</html>

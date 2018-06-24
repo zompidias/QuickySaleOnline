@@ -1,0 +1,3746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>ftp://quickysale.com/httpdocs</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmUtiR83wIkKYuTT5sKpfGAAAAAACAAAAAAAQZgAAAAEAACAAAAD+8BlB6CkeUaCqAJNLnXdjnSRIwGgkrcGMqKPW4LgYXgAAAAAOgAAAAAIAACAAAAA4jx+d3e+WtNtJGQ8AZiNpWatCC69bPLSCj8zFAsOZnSAAAADh60Mx2UKMrzTRHbMCdUdL0FOLt7BYe99b8iBnlLsqmUAAAADtrw5mwZFI/d+NDoaXR0nXme2RTiSwvlw0afgfDyrMTaMtgreYdKeQwegI3hDKpZGHeVy3GNo395jGflPMnnfI</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/Templates/EmailOrder.html">
+      <publishTime>12/09/2015 12:07:59</publishTime>
+    </File>
+    <File Include="App_Data/Templates/QSLogo16A.png">
+      <publishTime>12/09/2015 09:56:23</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/30/2015 21:51:02</publishTime>
+    </File>
+    <File Include="bin/BusinessLayer.dll">
+      <publishTime>08/18/2016 09:29:23</publishTime>
+    </File>
+    <File Include="bin/BusinessLayer.pdb">
+      <publishTime>08/18/2016 09:29:20</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>10/30/2015 21:50:52</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.xml">
+      <publishTime>10/30/2015 21:50:52</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>10/30/2015 21:50:53</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.xml">
+      <publishTime>10/30/2015 21:50:53</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>10/30/2015 21:50:53</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.xml">
+      <publishTime>10/30/2015 21:50:53</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>10/30/2015 21:50:54</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.xml">
+      <publishTime>10/30/2015 21:50:54</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>10/30/2015 21:50:54</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>10/30/2015 21:50:55</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.xml">
+      <publishTime>10/30/2015 21:50:55</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.xml">
+      <publishTime>10/30/2015 21:50:54</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/30/2015 21:50:21</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.xml">
+      <publishTime>10/30/2015 21:50:21</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CSharp.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.xml">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.xml">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/30/2015 21:50:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>10/30/2015 21:50:47</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.WebPages.OAuth.dll">
+      <publishTime>10/30/2015 21:50:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.WebPages.OAuth.xml">
+      <publishTime>10/30/2015 21:50:51</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/30/2015 21:50:43</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.xml">
+      <publishTime>10/30/2015 21:50:43</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>11/07/2015 12:36:43</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>11/07/2015 12:36:45</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.xml">
+      <publishTime>11/07/2015 12:36:45</publishTime>
+    </File>
+    <File Include="bin/PagedList.xml">
+      <publishTime>11/07/2015 12:36:43</publishTime>
+    </File>
+    <File Include="bin/QuickySaleOnlineShopper.dll">
+      <publishTime>09/04/2016 16:55:14</publishTime>
+    </File>
+    <File Include="bin/QuickySaleOnlineShopper.dll.config">
+      <publishTime>09/03/2016 22:19:08</publishTime>
+    </File>
+    <File Include="bin/QuickySaleOnlineShopper.pdb">
+      <publishTime>09/04/2016 16:55:13</publishTime>
+    </File>
+    <File Include="bin/RazorEngine.dll">
+      <publishTime>12/10/2015 08:51:54</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.DataAnnotations.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Configuration.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Data.DataSetExtensions.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Data.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Data.Entity.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.EnterpriseServices.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.xml">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/System.Transactions.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Abstractions.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.ApplicationServices.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.DynamicData.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Entity.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/30/2015 21:50:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.xml">
+      <publishTime>10/30/2015 21:50:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>10/30/2015 21:50:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.OData.dll">
+      <publishTime>10/30/2015 21:51:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.OData.xml">
+      <publishTime>10/30/2015 21:51:01</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.xml">
+      <publishTime>10/30/2015 21:50:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>09/25/2014 16:41:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.xml">
+      <publishTime>10/01/2013 18:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/30/2015 21:50:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/09/2013 11:05:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.xml">
+      <publishTime>10/01/2013 18:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Routing.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Services.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/30/2015 21:50:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.xml">
+      <publishTime>10/30/2015 21:50:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/30/2015 21:50:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/09/2013 11:05:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.xml">
+      <publishTime>10/01/2013 18:07:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.xml">
+      <publishTime>10/30/2015 21:50:46</publishTime>
+    </File>
+    <File Include="bin/System.Xml.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Xml.Linq.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>10/30/2015 21:51:03</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.Data.dll">
+      <publishTime>07/09/2013 11:05:10</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.Data.xml">
+      <publishTime>10/01/2013 18:07:50</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.WebData.dll">
+      <publishTime>10/30/2015 21:50:52</publishTime>
+    </File>
+    <File Include="bin/WebMatrix.WebData.xml">
+      <publishTime>10/30/2015 21:50:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/30/2015 21:50:57</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/30/2015 21:50:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>10/30/2015 21:50:56</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg10.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg11.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg12.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg13.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg14.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg15.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg2.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg3.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg4.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg5.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg6.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg7.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg8.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg8Tablet.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/backg9.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/mulitcolour2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/multicolo3.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/multicolor1.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/multicolor4.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/multicolor5.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/multicolor6.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/multicolor7.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/multicolor8.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white10.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white10B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white11.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white11B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white12.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white12B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white13.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white13.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white13B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white3.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white4.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white6.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white6.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white7.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white7.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white7B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white8.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white8A.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white8B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white9.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/white9B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/B.Images/whitebox1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/3ballerinatea.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/3crownpowdermilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/5alivebreakabel.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/5aliveplastic.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/aeroplanebasmaticrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/afccracker.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ajax-loader.gif">
+      <publishTime>05/11/2015 14:13:55</publishTime>
+    </File>
+    <File Include="Content/Images/ajax-loader.png">
+      <publishTime>05/11/2015 14:13:55</publishTime>
+    </File>
+    <File Include="Content/Images/alwaysclassic.png">
+      <publishTime>12/02/2015 10:48:12</publishTime>
+    </File>
+    <File Include="Content/Images/alwayslogo.jpg">
+      <publishTime>12/02/2015 10:10:45</publishTime>
+    </File>
+    <File Include="Content/Images/alwayslogo.png">
+      <publishTime>12/02/2015 10:48:38</publishTime>
+    </File>
+    <File Include="Content/Images/amstalmaltacan.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/amstalmaltacan.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/applesmall.jpg">
+      <publishTime>11/11/2015 09:09:15</publishTime>
+    </File>
+    <File Include="Content/Images/applesmall.png">
+      <publishTime>11/11/2015 09:12:05</publishTime>
+    </File>
+    <File Include="Content/Images/aquafinawater.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/aquafreshmilkteeth.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/arieldetergent.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/astonishhandwash.png">
+      <publishTime>03/09/2016 14:40:20</publishTime>
+    </File>
+    <File Include="Content/Images/astonishspray.png">
+      <publishTime>03/09/2016 14:41:31</publishTime>
+    </File>
+    <File Include="Content/Images/atarugupepper.png">
+      <publishTime>11/08/2015 17:03:05</publishTime>
+    </File>
+    <File Include="Content/Images/ayoolapandoyam.png">
+      <publishTime>11/12/2015 11:02:25</publishTime>
+    </File>
+    <File Include="Content/Images/B29soap.jpg">
+      <publishTime>12/02/2015 10:06:13</publishTime>
+    </File>
+    <File Include="Content/Images/B29soap.png">
+      <publishTime>12/02/2015 10:45:28</publishTime>
+    </File>
+    <File Include="Content/Images/bakedbeans.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bakedbeans.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bamamayonaise.png">
+      <publishTime>12/02/2015 10:57:34</publishTime>
+    </File>
+    <File Include="Content/Images/banana.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/barondevallsalc.png">
+      <publishTime>08/11/2015 16:48:30</publishTime>
+    </File>
+    <File Include="Content/Images/baronromeroalc.png">
+      <publishTime>08/11/2015 16:49:11</publishTime>
+    </File>
+    <File Include="Content/Images/beansflour.png">
+      <publishTime>12/07/2015 17:13:25</publishTime>
+    </File>
+    <File Include="Content/Images/bellefullnoodle.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/belletissue.png">
+      <publishTime>12/02/2015 10:50:07</publishTime>
+    </File>
+    <File Include="Content/Images/belloxibiscuit.png">
+      <publishTime>12/02/2015 11:02:43</publishTime>
+    </File>
+    <File Include="Content/Images/bingosilwash.png">
+      <publishTime>03/09/2016 14:38:26</publishTime>
+    </File>
+    <File Include="Content/Images/birdcustard.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bitterleaf.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/blackolives.png">
+      <publishTime>03/09/2016 13:09:34</publishTime>
+    </File>
+    <File Include="Content/Images/blackpepper.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bluebandbutter.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bluebandbutter.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bobokids.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bobokids.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/boboorange.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bobopineapple.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bobostrawberry.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bodybkg.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bottledwater.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bournvitasachet.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bournvitasachet.png">
+      <publishTime>12/02/2015 11:04:32</publishTime>
+    </File>
+    <File Include="Content/Images/bread.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/butter.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cabbage.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/camerounpepper.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/camerounpepper.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/canoesoap.png">
+      <publishTime>12/02/2015 10:42:53</publishTime>
+    </File>
+    <File Include="Content/Images/canoesoapunwrapped.png">
+      <publishTime>12/02/2015 10:43:14</publishTime>
+    </File>
+    <File Include="Content/Images/capricerice.png">
+      <publishTime>11/08/2015 17:33:02</publishTime>
+    </File>
+    <File Include="Content/Images/capricericenormal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/caprisone.png">
+      <publishTime>11/08/2015 17:33:56</publishTime>
+    </File>
+    <File Include="Content/Images/cartonOfCaprison.jpg">
+      <publishTime>11/08/2015 14:59:57</publishTime>
+    </File>
+    <File Include="Content/Images/cartonOfCaprisone.png">
+      <publishTime>11/08/2015 17:34:44</publishTime>
+    </File>
+    <File Include="Content/Images/cartonofharpcan.png">
+      <publishTime>11/08/2015 15:27:58</publishTime>
+    </File>
+    <File Include="Content/Images/cartonOfNoodle.png">
+      <publishTime>11/08/2015 14:58:46</publishTime>
+    </File>
+    <File Include="Content/Images/cartonOfRibena.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cartonpeaksachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cartonpeaktinmilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/carwashliquid.png">
+      <publishTime>03/09/2016 14:36:52</publishTime>
+    </File>
+    <File Include="Content/Images/cashewnuts.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ceresbreakable.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cestbon.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chapman.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chapman.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chicken.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chickensausage.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chickensausage.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexotic50cl.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticbanana.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticbreakable.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticguava.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexotickid.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticmango.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticmultifruta.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticorangeandcoconut.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticorangeandpeach.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticorngewithpulp.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexoticpineappleandpapaya.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chiexotictropicalfruit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chilisauce.png">
+      <publishTime>03/09/2016 14:32:39</publishTime>
+    </File>
+    <File Include="Content/Images/chivita1ltre.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivita50cl.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitaactive.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitakids.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitakids.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitamango.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitamangoandorange.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitaorange.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitaorangeandpineapple.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/chivitapineapple.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cifcream.png">
+      <publishTime>03/09/2016 14:39:07</publishTime>
+    </File>
+    <File Include="Content/Images/ciffloor.png">
+      <publishTime>03/09/2016 14:39:44</publishTime>
+    </File>
+    <File Include="Content/Images/clingfilm.png">
+      <publishTime>03/09/2016 14:11:57</publishTime>
+    </File>
+    <File Include="Content/Images/closeup.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/closeupherbal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cocacolacan.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cocacolazerobottle.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/coconutmilk.png">
+      <publishTime>03/09/2016 13:11:11</publishTime>
+    </File>
+    <File Include="Content/Images/cocopopscereal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/colemanmustardcream.png">
+      <publishTime>03/09/2016 10:33:09</publishTime>
+    </File>
+    <File Include="Content/Images/colgate.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/colgate2yrs.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/comfortwash.png">
+      <publishTime>03/09/2016 14:37:29</publishTime>
+    </File>
+    <File Include="Content/Images/coriander.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cornbeef.png">
+      <publishTime>03/09/2016 12:20:07</publishTime>
+    </File>
+    <File Include="Content/Images/cornedbeef.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cornedbeef.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cornflour.png">
+      <publishTime>03/09/2016 10:37:37</publishTime>
+    </File>
+    <File Include="Content/Images/costaseasalt.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cowbellchocolatesachet.png">
+      <publishTime>12/02/2015 11:06:22</publishTime>
+    </File>
+    <File Include="Content/Images/cowngate1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cowngate2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cowngate3.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cowngate3.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cowngatelogo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cowtail.png">
+      <publishTime>11/11/2015 10:20:06</publishTime>
+    </File>
+    <File Include="Content/Images/crackers.png">
+      <publishTime>02/09/2016 15:36:16</publishTime>
+    </File>
+    <File Include="Content/Images/crayfish.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/crayfish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/croakerfish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/crunchynutcereal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cucumber.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/curry.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/currybig.png">
+      <publishTime>11/12/2015 10:44:42</publishTime>
+    </File>
+    <File Include="Content/Images/daburherbaltoothpaste.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/danawater.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/dangotesaltbig.png">
+      <publishTime>11/12/2015 10:44:04</publishTime>
+    </File>
+    <File Include="Content/Images/dangotesaltsmall.png">
+      <publishTime>11/12/2015 10:43:30</publishTime>
+    </File>
+    <File Include="Content/Images/dangotespaghetti.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/danishcookies.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/danosachetmilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/dereicasachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/dericatomatoetin.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/deroyalnoodle.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/dettoldisinfectant.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/dettollemonliquid.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/dettolsoap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/digestivebiscuit.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/digestivebiscuit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/dovesoap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/drbrownpad.jpg">
+      <publishTime>12/02/2015 10:11:57</publishTime>
+    </File>
+    <File Include="Content/Images/drbrownpad.png">
+      <publishTime>12/02/2015 10:49:35</publishTime>
+    </File>
+    <File Include="Content/Images/driedcatfish.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/driedcatfish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/driedpepper.jpg">
+      <publishTime>11/11/2015 08:59:37</publishTime>
+    </File>
+    <File Include="Content/Images/driedpepper.png">
+      <publishTime>11/11/2015 09:13:40</publishTime>
+    </File>
+    <File Include="Content/Images/drostchyhoffalc.png">
+      <publishTime>11/08/2015 16:54:04</publishTime>
+    </File>
+    <File Include="Content/Images/egg2.png">
+      <publishTime>11/02/2015 16:02:13</publishTime>
+    </File>
+    <File Include="Content/Images/eggplant.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/eggplant.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Eggs.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/egusi.jpg">
+      <publishTime>11/11/2015 08:56:54</publishTime>
+    </File>
+    <File Include="Content/Images/egusi.png">
+      <publishTime>11/11/2015 09:14:15</publishTime>
+    </File>
+    <File Include="Content/Images/evarednonalc.png">
+      <publishTime>11/08/2015 16:56:56</publishTime>
+    </File>
+    <File Include="Content/Images/evawater.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/fairylemon.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/fairyoriginal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/fantacan.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/farowater.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/fayrouzebottle.png">
+      <publishTime>11/09/2015 13:07:09</publishTime>
+    </File>
+    <File Include="Content/Images/febreezeairfreshner.png">
+      <publishTime>03/09/2016 14:45:05</publishTime>
+    </File>
+    <File Include="Content/Images/flavorcharm.png">
+      <publishTime>03/09/2016 13:45:05</publishTime>
+    </File>
+    <File Include="Content/Images/flour.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/foilpaper.png">
+      <publishTime>03/09/2016 14:11:09</publishTime>
+    </File>
+    <File Include="Content/Images/freshcarrot.png">
+      <publishTime>11/09/2015 15:58:55</publishTime>
+    </File>
+    <File Include="Content/Images/freshcatfish.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshcatfish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshcelery.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshcoriander.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshcurryleaf.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshginger.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshgreenpeas.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshgreenpepper.png">
+      <publishTime>11/09/2015 15:57:32</publishTime>
+    </File>
+    <File Include="Content/Images/freshleek.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshmintleaves.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshparsely.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshscentleaf.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/freshyo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/friedriceprice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/frisogoldrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/frisogoldwheat.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/frozenshrimps.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/frozenshrimps.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/fruitnfibrecereal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/fruta1litre.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/gardenegg.png">
+      <publishTime>11/09/2015 15:54:19</publishTime>
+    </File>
+    <File Include="Content/Images/garlicfullbag.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/garlicfullbag.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/garlichalfbag.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/garlichalfbag.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/garlicpowder.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/gingerbeercan.png">
+      <publishTime>03/09/2016 14:47:36</publishTime>
+    </File>
+    <File Include="Content/Images/gingerpowder.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ginomacaroni.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ginosachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ginotin.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goat.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goat.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goldenmorn.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goldenpennycouscous.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goldenpennysemovita.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goldenpennysemovita.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goldenpennysemovita2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goldenpennysufar.png">
+      <publishTime>12/02/2015 10:56:59</publishTime>
+    </File>
+    <File Include="Content/Images/goldensellabasmaticrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/goodmrngcornflakes.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/grand1ltr.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/grandmalt.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/grandmaltcan.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/grandoil2.7litr.png">
+      <publishTime>11/09/2015 15:51:03</publishTime>
+    </File>
+    <File Include="Content/Images/grandoil4ltr.jpg">
+      <publishTime>08/11/2015 15:47:54</publishTime>
+    </File>
+    <File Include="Content/Images/grandoil4ltr.png">
+      <publishTime>11/09/2015 15:51:42</publishTime>
+    </File>
+    <File Include="Content/Images/grandoilbig.png">
+      <publishTime>11/09/2015 15:52:13</publishTime>
+    </File>
+    <File Include="Content/Images/greenbeans.png">
+      <publishTime>11/09/2015 15:58:01</publishTime>
+    </File>
+    <File Include="Content/Images/greenolives.png">
+      <publishTime>03/09/2016 13:08:41</publishTime>
+    </File>
+    <File Include="Content/Images/greenpeas.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/greenpeas.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/happyhourjuice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/happyhourtropicalfruit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/harpic.png">
+      <publishTime>12/02/2015 10:53:34</publishTime>
+    </File>
+    <File Include="Content/Images/heinekencan.png">
+      <publishTime>11/08/2015 15:15:11</publishTime>
+    </File>
+    <File Include="Content/Images/heinzbabayfood.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/heinzbabayfood.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/heinzketchup.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/heinzsaladcream.png">
+      <publishTime>12/02/2015 10:58:02</publishTime>
+    </File>
+    <File Include="Content/Images/herbaltoothpaste.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hobnobsbiscuit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hollandiacustard.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hollandiamilk.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hollandiamilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hollandiapineapple.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hollandiastrawberry.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/home-showcase.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDiaplay8.png">
+      <publishTime>02/11/2015 18:28:41</publishTime>
+    </File>
+    <File Include="Content/Images/homeDisplay1.png">
+      <publishTime>02/11/2015 18:25:08</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDisplay10.png">
+      <publishTime>02/11/2015 18:35:53</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDisplay11.png">
+      <publishTime>03/11/2015 20:33:53</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDisplay12.png">
+      <publishTime>03/11/2015 20:34:28</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDisplay2.png">
+      <publishTime>02/11/2015 18:28:05</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDisplay3.png">
+      <publishTime>02/11/2015 18:28:16</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDisplay7.png">
+      <publishTime>02/11/2015 18:27:40</publishTime>
+    </File>
+    <File Include="Content/Images/HomeDisplay9.png">
+      <publishTime>02/11/2015 18:33:16</publishTime>
+    </File>
+    <File Include="Content/Images/honeywellsemolina.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/honeywellwheat.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hotdog.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/huggieswipes.png">
+      <publishTime>03/09/2016 14:46:28</publishTime>
+    </File>
+    <File Include="Content/Images/hwataicracker.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hwataicracker.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/hypobleach.png">
+      <publishTime>12/02/2015 10:51:35</publishTime>
+    </File>
+    <File Include="Content/Images/icedfish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/icons-18-black.png">
+      <publishTime>11/05/2015 14:13:55</publishTime>
+    </File>
+    <File Include="Content/Images/icons-18-white.png">
+      <publishTime>11/05/2015 14:13:55</publishTime>
+    </File>
+    <File Include="Content/Images/icons-36-black.png">
+      <publishTime>11/05/2015 14:13:54</publishTime>
+    </File>
+    <File Include="Content/Images/icons-36-white.png">
+      <publishTime>11/05/2015 14:13:53</publishTime>
+    </File>
+    <File Include="Content/Images/ijebugari.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/image4144.png">
+      <publishTime>12/02/2015 18:31:45</publishTime>
+    </File>
+    <File Include="Content/Images/indomiechicken.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/indomiehungrymanct.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/indomiehungrymanpk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/indomieonion.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/indomieonionct.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/irishpotatoe.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/irishpotatoe.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/irishspring.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/izaldisinfectant.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/jacobcrackerbuscuit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/jacobscracker.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/jacobwafercracker.png">
+      <publishTime>02/09/2016 15:32:16</publishTime>
+    </File>
+    <File Include="Content/Images/jam.png">
+      <publishTime>03/09/2016 09:13:48</publishTime>
+    </File>
+    <File Include="Content/Images/jellofriceprice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/jikbleach.png">
+      <publishTime>12/02/2015 10:52:06</publishTime>
+    </File>
+    <File Include="Content/Images/jnwcocktailnonalc.png">
+      <publishTime>11/08/2015 16:55:53</publishTime>
+    </File>
+    <File Include="Content/Images/johnsonwipes.png">
+      <publishTime>03/09/2016 14:45:48</publishTime>
+    </File>
+    <File Include="Content/Images/juliesbuttercracker.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/justbutter.png">
+      <publishTime>12/02/2015 18:32:52</publishTime>
+    </File>
+    <File Include="Content/Images/kagoralc.png">
+      <publishTime>11/08/2015 16:54:45</publishTime>
+    </File>
+    <File Include="Content/Images/kellogscornflakes.png">
+      <publishTime>11/12/2015 11:09:35</publishTime>
+    </File>
+    <File Include="Content/Images/kerkcracker.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/kingspalmoil.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/kingspalmoil.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/klin100g.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/knowchickenpk.png">
+      <publishTime>11/12/2015 11:44:22</publishTime>
+    </File>
+    <File Include="Content/Images/kpomo.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/kpomo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/lacaseraplastic.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/lactogen.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ladycarepad.png">
+      <publishTime>12/02/2015 10:49:12</publishTime>
+    </File>
+    <File Include="Content/Images/lalqillabasmaticrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/laserhoney.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/laseroil.png">
+      <publishTime>11/12/2015 10:46:46</publishTime>
+    </File>
+    <File Include="Content/Images/laseroliveoil.png">
+      <publishTime>11/12/2015 10:46:22</publishTime>
+    </File>
+    <File Include="Content/Images/laseroliveoilsmall.png">
+      <publishTime>02/09/2016 15:57:15</publishTime>
+    </File>
+    <File Include="Content/Images/legendtea.png">
+      <publishTime>03/09/2016 12:10:40</publishTime>
+    </File>
+    <File Include="Content/Images/leisureoilbig.png">
+      <publishTime>02/09/2016 16:05:07</publishTime>
+    </File>
+    <File Include="Content/Images/leisureoilsmall.png">
+      <publishTime>02/09/2016 16:05:52</publishTime>
+    </File>
+    <File Include="Content/Images/lettuce.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/lettuce.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/liptontea.png">
+      <publishTime>12/02/2015 10:54:01</publishTime>
+    </File>
+    <File Include="Content/Images/liptonyellowlabel.jpg">
+      <publishTime>08/11/2015 15:34:37</publishTime>
+    </File>
+    <File Include="Content/Images/liquidmilk.png">
+      <publishTime>11/08/2015 15:38:44</publishTime>
+    </File>
+    <File Include="Content/Images/liquidpeakmilk.png">
+      <publishTime>11/08/2015 15:38:57</publishTime>
+    </File>
+    <File Include="Content/Images/localpap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/logo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/loyasachet.png">
+      <publishTime>12/02/2015 11:05:54</publishTime>
+    </File>
+    <File Include="Content/Images/lucozadebig.png">
+      <publishTime>03/09/2016 14:48:11</publishTime>
+    </File>
+    <File Include="Content/Images/lucozadeBoostBottle.jpg">
+      <publishTime>08/11/2015 15:08:11</publishTime>
+    </File>
+    <File Include="Content/Images/lucozadepk.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/lucozadepk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/lucozadeplastic.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/lucozadetriangle.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/luxsoap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/macaroni.png">
+      <publishTime>11/12/2015 10:48:00</publishTime>
+    </File>
+    <File Include="Content/Images/macleanstoothpaste.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/maggipk.png">
+      <publishTime>11/12/2015 11:45:22</publishTime>
+    </File>
+    <File Include="Content/Images/maharanibasmaticrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/maltaguinesscan.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/maltinacan.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/maltinacan.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/maltinaplastic.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/maltinaplastic.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/maltinaspit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/mamagold50kg.png">
+      <publishTime>11/09/2015 15:59:56</publishTime>
+    </File>
+    <File Include="Content/Images/mamagold5kg.png">
+      <publishTime>11/09/2015 16:00:23</publishTime>
+    </File>
+    <File Include="Content/Images/mamagoldrice.png">
+      <publishTime>11/09/2015 16:00:53</publishTime>
+    </File>
+    <File Include="Content/Images/mamalemonlogo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/marvelmilkbig.png">
+      <publishTime>03/09/2016 11:37:19</publishTime>
+    </File>
+    <File Include="Content/Images/marvelmilksmall.png">
+      <publishTime>03/09/2016 11:38:04</publishTime>
+    </File>
+    <File Include="Content/Images/marylandcookies.png">
+      <publishTime>02/09/2016 15:20:23</publishTime>
+    </File>
+    <File Include="Content/Images/meatpieces.jpg">
+      <publishTime>11/11/2015 10:14:10</publishTime>
+    </File>
+    <File Include="Content/Images/meatpieces.png">
+      <publishTime>11/11/2015 10:16:51</publishTime>
+    </File>
+    <File Include="Content/Images/meatwhole.jpg">
+      <publishTime>11/11/2015 10:14:09</publishTime>
+    </File>
+    <File Include="Content/Images/meatwhole.png">
+      <publishTime>11/11/2015 10:16:28</publishTime>
+    </File>
+    <File Include="Content/Images/milletpap.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/milletpap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/millvilleoats.png">
+      <publishTime>11/12/2015 11:56:40</publishTime>
+    </File>
+    <File Include="Content/Images/milocereal.png">
+      <publishTime>11/12/2015 11:12:01</publishTime>
+    </File>
+    <File Include="Content/Images/milodrink.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/milosachet.png">
+      <publishTime>12/02/2015 11:04:57</publishTime>
+    </File>
+    <File Include="Content/Images/mincedmeat.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/mirindapk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/mixeddrinks.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/moibutter.png">
+      <publishTime>12/04/2015 08:28:59</publishTime>
+    </File>
+    <File Include="Content/Images/morningfreshantibacterial.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/morningfreshoriginal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/mountaindewbotle.png">
+      <publishTime>09/03/2016 15:18:24</publishTime>
+    </File>
+    <File Include="Content/Images/mowawater.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/mowawater.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/mrsdafur3in1.png">
+      <publishTime>11/09/2015 11:03:16</publishTime>
+    </File>
+    <File Include="Content/Images/mrsdafur5in1.png">
+      <publishTime>11/09/2015 11:04:07</publishTime>
+    </File>
+    <File Include="Content/Images/mrsdafurrectangle.png">
+      <publishTime>11/09/2015 11:02:46</publishTime>
+    </File>
+    <File Include="Content/Images/mrsdafurSnack1.png">
+      <publishTime>11/09/2015 11:01:52</publishTime>
+    </File>
+    <File Include="Content/Images/mrsheen.png">
+      <publishTime>03/09/2016 14:42:24</publishTime>
+    </File>
+    <File Include="Content/Images/mushrooms.png">
+      <publishTime>03/09/2016 13:10:11</publishTime>
+    </File>
+    <File Include="Content/Images/nanmilk1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nanmilk2.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nanmilk2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nanmilk3.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nanmilk3.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nascocornflakes.png">
+      <publishTime>11/12/2015 11:10:35</publishTime>
+    </File>
+    <File Include="Content/Images/natcocherryjam.png">
+      <publishTime>02/09/2016 16:19:08</publishTime>
+    </File>
+    <File Include="Content/Images/natcojam.png">
+      <publishTime>02/09/2016 16:13:49</publishTime>
+    </File>
+    <File Include="Content/Images/natcomangojam.png">
+      <publishTime>02/09/2016 16:20:03</publishTime>
+    </File>
+    <File Include="Content/Images/natcopineapplejam.png">
+      <publishTime>02/09/2016 16:20:40</publishTime>
+    </File>
+    <File Include="Content/Images/natcostrawberryjam.png">
+      <publishTime>02/09/2016 16:22:13</publishTime>
+    </File>
+    <File Include="Content/Images/NdomieNoodle.png">
+      <publishTime>11/11/2015 09:56:46</publishTime>
+    </File>
+    <File Include="Content/Images/nescafecoffedecaf.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nescafecoffee.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nestlebottlewater.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nigerianrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nondairycreamerbydairycleff.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nondairycreamerbydairycleff.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutella.png">
+      <publishTime>12/04/2015 08:18:01</publishTime>
+    </File>
+    <File Include="Content/Images/nutmeg.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutribom.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutribomlogo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilac.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilac3fruit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilacbanana.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilachoney.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilacwheat.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilonbanana.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilonbanana.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilonmaize.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrilonrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrimilkapple.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrimilkpear.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nutrimilkpineapple.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ogbono.png">
+      <publishTime>11/11/2015 09:15:00</publishTime>
+    </File>
+    <File Include="Content/Images/okro.jpg">
+      <publishTime>09/11/2015 12:19:53</publishTime>
+    </File>
+    <File Include="Content/Images/okro.png">
+      <publishTime>11/09/2015 16:09:40</publishTime>
+    </File>
+    <File Include="Content/Images/olaolapoundedyam.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/olaysoap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/oldenburgermilk.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/oldenburgermilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/omo1kg.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/omo250kg.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/omo2kg.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/omobleach.png">
+      <publishTime>12/02/2015 10:53:03</publishTime>
+    </File>
+    <File Include="Content/Images/onion.jpg">
+      <publishTime>09/11/2015 12:35:58</publishTime>
+    </File>
+    <File Include="Content/Images/onion.png">
+      <publishTime>11/09/2015 12:38:31</publishTime>
+    </File>
+    <File Include="Content/Images/oralballroundprotection.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/oranges.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ovaltine.jpg">
+      <publishTime>08/11/2015 15:35:18</publishTime>
+    </File>
+    <File Include="Content/Images/ovaltine.png">
+      <publishTime>11/12/2015 11:12:59</publishTime>
+    </File>
+    <File Include="Content/Images/ovaltinesachet.png">
+      <publishTime>12/02/2015 11:05:28</publishTime>
+    </File>
+    <File Include="Content/Images/oysetersauce.png">
+      <publishTime>03/09/2016 14:33:15</publishTime>
+    </File>
+    <File Include="Content/Images/packof7upbottle.jpg">
+      <publishTime>08/11/2015 15:17:51</publishTime>
+    </File>
+    <File Include="Content/Images/packofamstelmaltacan.jpg">
+      <publishTime>08/11/2015 15:28:13</publishTime>
+    </File>
+    <File Include="Content/Images/packofchapmanbottle.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/packofcocacolabottle.jpg">
+      <publishTime>08/11/2015 15:11:21</publishTime>
+    </File>
+    <File Include="Content/Images/packofcocacolabottle.png">
+      <publishTime>11/08/2015 22:02:46</publishTime>
+    </File>
+    <File Include="Content/Images/packofFantaBottle.jpg">
+      <publishTime>08/11/2015 15:06:05</publishTime>
+    </File>
+    <File Include="Content/Images/packofFantaBottle.png">
+      <publishTime>11/08/2015 21:57:40</publishTime>
+    </File>
+    <File Include="Content/Images/packOfMaltina.png">
+      <publishTime>11/08/2015 15:05:51</publishTime>
+    </File>
+    <File Include="Content/Images/packofPepsi.jpg">
+      <publishTime>08/11/2015 15:03:27</publishTime>
+    </File>
+    <File Include="Content/Images/packofPepsi.png">
+      <publishTime>11/08/2015 21:54:04</publishTime>
+    </File>
+    <File Include="Content/Images/packofspritebottle.jpg">
+      <publishTime>08/11/2015 15:12:26</publishTime>
+    </File>
+    <File Include="Content/Images/packofspritebottle.png">
+      <publishTime>11/08/2015 22:04:34</publishTime>
+    </File>
+    <File Include="Content/Images/packOfTeem.png">
+      <publishTime>11/09/2015 10:15:02</publishTime>
+    </File>
+    <File Include="Content/Images/palm oil.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/palmkennel.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/palmkennel.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/palmoil.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/palmoil.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/palomapockettissue.png">
+      <publishTime>03/09/2016 14:47:05</publishTime>
+    </File>
+    <File Include="Content/Images/panlafish.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/panlafish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/parazonebleach.png">
+      <publishTime>12/02/2015 10:52:35</publishTime>
+    </File>
+    <File Include="Content/Images/peak123sachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/peak123tin.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/peakpowderedmilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/peaksachet.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/peaksachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/peaksachet2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/peaksachetmilk.jpg">
+      <publishTime>08/11/2015 15:38:35</publishTime>
+    </File>
+    <File Include="Content/Images/peaksmalltin.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/peppersoupspice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/persil.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/persil10washes.png">
+      <publishTime>03/09/2016 14:33:53</publishTime>
+    </File>
+    <File Include="Content/Images/persil120washes.png">
+      <publishTime>03/09/2016 14:36:07</publishTime>
+    </File>
+    <File Include="Content/Images/persil23washes.png">
+      <publishTime>03/09/2016 17:13:58</publishTime>
+    </File>
+    <File Include="Content/Images/persil45washes.png">
+      <publishTime>03/09/2016 14:35:25</publishTime>
+    </File>
+    <File Include="Content/Images/pineapple.png">
+      <publishTime>11/09/2015 15:53:31</publishTime>
+    </File>
+    <File Include="Content/Images/placeholder.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/plantain.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/plantain.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/plantanflour.png">
+      <publishTime>12/07/2015 17:12:20</publishTime>
+    </File>
+    <File Include="Content/Images/plumtomatoescan.png">
+      <publishTime>03/09/2016 09:28:45</publishTime>
+    </File>
+    <File Include="Content/Images/powerhorsecan.png">
+      <publishTime>03/09/2016 14:08:14</publishTime>
+    </File>
+    <File Include="Content/Images/poweroil1ltr.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/poweroil3ltr.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/premiersoap.png">
+      <publishTime>12/02/2015 10:44:59</publishTime>
+    </File>
+    <File Include="Content/Images/presidentbasmaticrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/QSLogo1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/QSLogo10.png">
+      <publishTime>04/11/2015 19:16:03</publishTime>
+    </File>
+    <File Include="Content/Images/QSLogo16.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/QSLogo16A.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/QSLogo16Tablet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/QSLogo6.png">
+      <publishTime>11/04/2015 19:27:33</publishTime>
+    </File>
+    <File Include="Content/Images/QSLogo6M.png">
+      <publishTime>11/05/2015 14:34:04</publishTime>
+    </File>
+    <File Include="Content/Images/qs_11.png">
+      <publishTime>02/04/2016 20:45:52</publishTime>
+    </File>
+    <File Include="Content/Images/quakeroats.png">
+      <publishTime>11/12/2015 11:56:11</publishTime>
+    </File>
+    <File Include="Content/Images/quakeroatslong.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/quakeroatssachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/realmilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/RedBeans.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/redbeans2.png">
+      <publishTime>11/02/2015 16:03:04</publishTime>
+    </File>
+    <File Include="Content/Images/redbullcan.png">
+      <publishTime>03/09/2016 14:07:37</publishTime>
+    </File>
+    <File Include="Content/Images/redgari.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/redkidneybeans.png">
+      <publishTime>03/09/2016 09:23:49</publishTime>
+    </File>
+    <File Include="Content/Images/ribenabig.png">
+      <publishTime>03/09/2016 14:48:42</publishTime>
+    </File>
+    <File Include="Content/Images/ribenainbox.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ribenaplastic.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ribenatriangle.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ribenatriangle.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Rice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/rice2.png">
+      <publishTime>11/02/2015 16:04:25</publishTime>
+    </File>
+    <File Include="Content/Images/riceflour.png">
+      <publishTime>12/07/2015 17:10:48</publishTime>
+    </File>
+    <File Include="Content/Images/ricekrispiescereal.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/roastedChicken.png">
+      <publishTime>11/11/2015 11:09:04</publishTime>
+    </File>
+    <File Include="Content/Images/rosecarlatissue.png">
+      <publishTime>12/02/2015 12:02:12</publishTime>
+    </File>
+    <File Include="Content/Images/rosetissue.jpg">
+      <publishTime>12/02/2015 10:14:18</publishTime>
+    </File>
+    <File Include="Content/Images/rosetissue.png">
+      <publishTime>12/02/2015 10:50:29</publishTime>
+    </File>
+    <File Include="Content/Images/rowsehoney.png">
+      <publishTime>02/09/2016 15:42:37</publishTime>
+    </File>
+    <File Include="Content/Images/royalgoldrice.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/royalstallionrice.png">
+      <publishTime>11/08/2015 20:33:35</publishTime>
+    </File>
+    <File Include="Content/Images/royaltyshortbread.png">
+      <publishTime>02/09/2016 15:23:19</publishTime>
+    </File>
+    <File Include="Content/Images/roycopk.png">
+      <publishTime>11/12/2015 11:44:54</publishTime>
+    </File>
+    <File Include="Content/Images/safeguardsoap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/saladcream.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/samosa.png">
+      <publishTime>11/09/2015 11:43:07</publishTime>
+    </File>
+    <File Include="Content/Images/saop.png">
+      <publishTime>12/02/2015 10:47:42</publishTime>
+    </File>
+    <File Include="Content/Images/sardines.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/savlondisinfectant.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/selvaspaghetti.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sensodynedailycare.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sensodynedailycare.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sensodyneextrafresh.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/septoldisinfectant.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sesameoil.png">
+      <publishTime>03/09/2016 14:13:38</publishTime>
+    </File>
+    <File Include="Content/Images/shombopepper.png">
+      <publishTime>11/09/2015 15:56:56</publishTime>
+    </File>
+    <File Include="Content/Images/shortbreadbiscuit.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/shortbreadbiscuit.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/singleapple.png">
+      <publishTime>11/11/2015 09:12:56</publishTime>
+    </File>
+    <File Include="Content/Images/skippypeanutbutter.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/skyflakescrackers.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sma1babyfood.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sma2babyfood.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sma3babyfood.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/smirnoffBottle.png">
+      <publishTime>11/08/2015 15:29:50</publishTime>
+    </File>
+    <File Include="Content/Images/sodacracker.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sodacracker.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/soysauce.png">
+      <publishTime>03/09/2016 14:12:57</publishTime>
+    </File>
+    <File Include="Content/Images/spaghetti.png">
+      <publishTime>11/12/2015 10:47:31</publishTime>
+    </File>
+    <File Include="Content/Images/spinach.png">
+      <publishTime>11/09/2015 10:22:24</publishTime>
+    </File>
+    <File Include="Content/Images/springonions.png">
+      <publishTime>11/08/2015 22:24:33</publishTime>
+    </File>
+    <File Include="Content/Images/springrolls.png">
+      <publishTime>11/09/2015 11:42:28</publishTime>
+    </File>
+    <File Include="Content/Images/spritecan.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/squeezedwhite.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/stlouissugar.png">
+      <publishTime>12/02/2015 10:56:27</publishTime>
+    </File>
+    <File Include="Content/Images/stockfish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/stockfishbody.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/stockfishhead.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sunlightdetergent.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/superhoney.png">
+      <publishTime>02/09/2016 15:50:07</publishTime>
+    </File>
+    <File Include="Content/Images/supremesemolina.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/swanwater.png">
+      <publishTime>11/09/2015 10:21:10</publishTime>
+    </File>
+    <File Include="Content/Images/sweetcorn.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sweetcorn.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/sweetpotatoe.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tastytomsachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tastytomtin.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tastytomtin.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tatasepepper.png">
+      <publishTime>11/09/2015 12:29:03</publishTime>
+    </File>
+    <File Include="Content/Images/tenderizer.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/terrapeppersachet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tetmosolsoap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/thunder.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/thymebig.png">
+      <publishTime>11/12/2015 10:45:19</publishTime>
+    </File>
+    <File Include="Content/Images/thymemed.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/thymesmall.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tilapiafish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tissue.jpg">
+      <publishTime>12/02/2015 10:16:58</publishTime>
+    </File>
+    <File Include="Content/Images/tissue.png">
+      <publishTime>12/02/2015 10:51:00</publishTime>
+    </File>
+    <File Include="Content/Images/toastedsoyflour.png">
+      <publishTime>12/07/2015 17:09:40</publishTime>
+    </File>
+    <File Include="Content/Images/tomatoeketchup.png">
+      <publishTime>12/02/2015 10:58:51</publishTime>
+    </File>
+    <File Include="Content/Images/tomatoes.jpg">
+      <publishTime>11/09/2015 12:16:19</publishTime>
+    </File>
+    <File Include="Content/Images/tomatoes.png">
+      <publishTime>11/09/2015 12:29:59</publishTime>
+    </File>
+    <File Include="Content/Images/topcrackerbiscuit.png">
+      <publishTime>12/02/2015 11:03:17</publishTime>
+    </File>
+    <File Include="Content/Images/topteaginger.png">
+      <publishTime>12/02/2015 10:54:37</publishTime>
+    </File>
+    <File Include="Content/Images/toptealime.png">
+      <publishTime>12/02/2015 10:55:03</publishTime>
+    </File>
+    <File Include="Content/Images/toptealogo.jpg">
+      <publishTime>12/02/2015 10:26:24</publishTime>
+    </File>
+    <File Include="Content/Images/toptealogo.png">
+      <publishTime>12/02/2015 10:55:25</publishTime>
+    </File>
+    <File Include="Content/Images/topteaordinary.png">
+      <publishTime>12/02/2015 10:55:50</publishTime>
+    </File>
+    <File Include="Content/Images/tropicalsunpeanutbutter.png">
+      <publishTime>11/08/2015 15:53:40</publishTime>
+    </File>
+    <File Include="Content/Images/trsalmondnuts.png">
+      <publishTime>03/09/2016 13:11:52</publishTime>
+    </File>
+    <File Include="Content/Images/trsbasmatirice.png">
+      <publishTime>03/09/2016 13:12:58</publishTime>
+    </File>
+    <File Include="Content/Images/trspopcorn.png">
+      <publishTime>03/09/2016 13:14:00</publishTime>
+    </File>
+    <File Include="Content/Images/tumeric.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tumeric.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tunafish.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/tunafish.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/turkeygizzard.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/turkeymeat.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/turkeyoil.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/turkeywings.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/turkeywings.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/uguleaves.png">
+      <publishTime>11/09/2015 12:43:40</publishTime>
+    </File>
+    <File Include="Content/Images/unripeplantain.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vijumilkapple.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vijumilkapple.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vijumilkchoco.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vijumilkchoco.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vijumilkorange.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vitamilk.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vitamilk.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/vitamilkenergy.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/wastebag.png">
+      <publishTime>03/09/2016 11:20:25</publishTime>
+    </File>
+    <File Include="Content/Images/watermellon.png">
+      <publishTime>11/09/2015 10:14:00</publishTime>
+    </File>
+    <File Include="Content/Images/weetabix.png">
+      <publishTime>03/09/2016 11:46:31</publishTime>
+    </File>
+    <File Include="Content/Images/welchdrink.png">
+      <publishTime>03/09/2016 14:43:10</publishTime>
+    </File>
+    <File Include="Content/Images/wessonoil.png">
+      <publishTime>11/12/2015 10:45:53</publishTime>
+    </File>
+    <File Include="Content/Images/white10.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white10B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white11.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white11B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white12.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white12B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white13.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white13.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white13B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white3.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white4.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white6.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white6.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white7.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white7.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white7B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white8.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white8A.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white8B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white9.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/white9B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/WhiteBeans.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitebeans2.png">
+      <publishTime>11/02/2015 16:03:47</publishTime>
+    </File>
+    <File Include="Content/Images/whitebox1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitebread.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitegari.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitegari.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitepap.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitepap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitepepper.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/whitevinegar.png">
+      <publishTime>03/09/2016 11:17:51</publishTime>
+    </File>
+    <File Include="Content/Images/windolene.png">
+      <publishTime>03/09/2016 14:44:25</publishTime>
+    </File>
+    <File Include="Content/Images/yam.jpg">
+      <publishTime>11/09/2015 12:23:48</publishTime>
+    </File>
+    <File Include="Content/Images/yam.png">
+      <publishTime>11/09/2015 12:27:39</publishTime>
+    </File>
+    <File Include="Content/Images/yam5tuber.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/yam5tuber.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/yamsingle.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/yellowpap.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/yellowpepper.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/yellowpepper.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/zarmacaroni.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/zwanchicken.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile-1.1.2.css">
+      <publishTime>05/11/2015 14:13:53</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile-1.1.2.min.css">
+      <publishTime>05/11/2015 14:13:53</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.structure-1.1.2.css">
+      <publishTime>05/11/2015 14:13:53</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.structure-1.1.2.min.css">
+      <publishTime>05/11/2015 14:13:53</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.theme-1.1.2.css">
+      <publishTime>05/11/2015 14:13:53</publishTime>
+    </File>
+    <File Include="Content/jquery.mobile.theme-1.1.2.min.css">
+      <publishTime>05/11/2015 14:13:53</publishTime>
+    </File>
+    <File Include="Content/PagedList.css">
+      <publishTime>07/11/2015 12:36:54</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Site.Mobile.css">
+      <publishTime>12/11/2015 09:41:45</publishTime>
+    </File>
+    <File Include="Content/Site_B.css">
+      <publishTime>09/13/2016 12:23:33</publishTime>
+    </File>
+    <File Include="Content/Site_B6.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_222222_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_454545_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_888888_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Controllers/CheckOutController.cs">
+      <publishTime>04/09/2016 16:54:41</publishTime>
+    </File>
+    <File Include="Controllers/HomeController.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Controllers/StoreController.cs">
+      <publishTime>03/12/2015 08:00:56</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/11.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/11AB.png">
+      <publishTime>11/03/2015 20:33:53</publishTime>
+    </File>
+    <File Include="Images/11BC.png">
+      <publishTime>02/04/2016 20:30:06</publishTime>
+    </File>
+    <File Include="Images/12.png">
+      <publishTime>11/03/2015 20:34:28</publishTime>
+    </File>
+    <File Include="Images/accent.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/bullet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/heroAccent.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList0.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList3.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList4.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList5.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList6.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList7.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList8.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/orderedList9.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/qs_11_qs_king.png">
+      <publishTime>02/05/2016 18:05:58</publishTime>
+    </File>
+    <File Include="Images/qs_11_qs_LargeVegBackground.png">
+      <publishTime>02/04/2016 20:45:52</publishTime>
+    </File>
+    <File Include="Images/qs_11_qs_veginBasket.png">
+      <publishTime>02/05/2016 17:34:26</publishTime>
+    </File>
+    <File Include="Images/qs_11_qs_vegsDrawn.png">
+      <publishTime>02/05/2016 17:38:27</publishTime>
+    </File>
+    <File Include="Images/qs_11_qs_vegsOnTable.png">
+      <publishTime>02/05/2016 17:36:25</publishTime>
+    </File>
+    <File Include="Images/qs_11_specialofferQS1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/qs_11_vegwithCowImage.png">
+      <publishTime>02/05/2016 20:31:00</publishTime>
+    </File>
+    <File Include="Images/thunder.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/trolleylogo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/AccountModels.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/BankDetails.cs">
+      <publishTime>11/04/2015 13:18:58</publishTime>
+    </File>
+    <File Include="Models/ContactUs.cs">
+      <publishTime>11/11/2015 18:36:17</publishTime>
+    </File>
+    <File Include="Models/CustomerDetail.cs">
+      <publishTime>11/11/2015 18:36:17</publishTime>
+    </File>
+    <File Include="Models/CustomerOrderDetail.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/FoodGroup.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/FoodItem.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/FoodWeightType.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/OnlineStoreEntities.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/Order.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/OrderNumber.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/QSSellerDetail.cs">
+      <publishTime>11/04/2015 21:25:01</publishTime>
+    </File>
+    <File Include="Models/ShoppingCart.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/State.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/StoreCart.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/SubFoodGroup.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Debug/build.force">
+      <publishTime>03/07/2016 10:39:14</publishTime>
+    </File>
+    <File Include="obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache">
+      <publishTime>03/07/2016 10:39:16</publishTime>
+    </File>
+    <File Include="obj/Debug/QuickySaleOnlineShopper.csproj.FileListAbsolute.txt">
+      <publishTime>03/07/2016 10:05:20</publishTime>
+    </File>
+    <File Include="obj/Debug/QuickySaleOnlineShopper.csprojResolveAssemblyReference.cache">
+      <publishTime>03/07/2016 10:05:13</publishTime>
+    </File>
+    <File Include="obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs">
+      <publishTime>03/07/2016 10:04:55</publishTime>
+    </File>
+    <File Include="obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs">
+      <publishTime>03/07/2016 10:04:55</publishTime>
+    </File>
+    <File Include="obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs">
+      <publishTime>03/07/2016 10:04:55</publishTime>
+    </File>
+    <File Include="obj/Release/DesignTimeResolveAssemblyReferencesInput.cache">
+      <publishTime>03/07/2016 10:05:58</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/App_Data/Templates/EmailOrder.html">
+      <publishTime>12/09/2015 12:07:59</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/App_Data/Templates/QSLogo16A.png">
+      <publishTime>12/09/2015 09:56:23</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/Antlr3.Runtime.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/BusinessLayer.dll">
+      <publishTime>02/01/2016 11:51:01</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/de/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/DotNetOpenAuth.Core.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/EntityFramework.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/es/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/fr/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/it/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ja/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ko/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/Microsoft.Data.Edm.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/Microsoft.Data.OData.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/Microsoft.Web.WebPages.OAuth.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/Newtonsoft.Json.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/PagedList.dll">
+      <publishTime>11/07/2015 12:36:43</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/PagedList.Mvc.dll">
+      <publishTime>11/07/2015 12:36:45</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/QuickySaleOnlineShopper.dll">
+      <publishTime>03/07/2016 10:06:02</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/QuickySaleOnlineShopper.dll.config">
+      <publishTime>03/04/2016 17:03:58</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/RazorEngine.dll">
+      <publishTime>12/10/2015 08:51:54</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/ru/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Spatial.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.Helpers.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.Http.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.Http.OData.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.Mvc.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.Optimization.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.Razor.dll">
+      <publishTime>07/09/2013 11:05:12</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.WebPages.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/09/2013 11:05:12</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/WebGrease.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/WebMatrix.Data.dll">
+      <publishTime>07/09/2013 11:05:10</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/WebMatrix.WebData.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Content/Images/beansflour.png">
+      <publishTime>12/07/2015 17:13:25</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Content/Images/plantanflour.png">
+      <publishTime>12/07/2015 17:12:20</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Content/Images/riceflour.png">
+      <publishTime>12/07/2015 17:10:48</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Content/Images/toastedsoyflour.png">
+      <publishTime>12/07/2015 17:09:40</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Content/Images/white9B.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Content/Site_B.css">
+      <publishTime>03/04/2016 12:52:23</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/favicon.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Global.asax">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/11.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/11AB.png">
+      <publishTime>11/03/2015 20:33:53</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/11BC.png">
+      <publishTime>02/04/2016 20:30:06</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/12.png">
+      <publishTime>11/03/2015 20:34:28</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/accent.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/bullet.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/heroAccent.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/qs_11_qs_king.png">
+      <publishTime>02/05/2016 18:05:58</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/qs_11_qs_LargeVegBackground.png">
+      <publishTime>02/04/2016 20:45:52</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/qs_11_qs_veginBasket.png">
+      <publishTime>02/05/2016 17:34:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/qs_11_qs_vegsDrawn.png">
+      <publishTime>02/05/2016 17:38:27</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/qs_11_qs_vegsOnTable.png">
+      <publishTime>02/05/2016 17:36:25</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/qs_11_vegwithCowImage.png">
+      <publishTime>02/05/2016 20:31:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/thunder.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Images/trolleylogo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/packages.config">
+      <publishTime>12/10/2015 08:51:57</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery-1.8.2.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery-1.8.2.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery-ui-1.8.24.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery-ui-1.8.24.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.mobile-1.1.2.js">
+      <publishTime>11/05/2015 14:13:51</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.mobile-1.1.2.min.js">
+      <publishTime>11/05/2015 14:13:38</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.validate.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.validate.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/knockout-2.2.0.debug.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/knockout-2.2.0.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/modernizr-2.6.2.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Scripts/_references.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/CheckOutLogin.cshtml">
+      <publishTime>12/08/2015 08:49:52</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/CheckOutLogin.iPad.cshtml">
+      <publishTime>03/04/2016 11:55:54</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/CheckOutLogin.Mobile.cshtml">
+      <publishTime>03/04/2016 11:55:54</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Complete.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Create.iPad.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Create.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Edit.cshtml">
+      <publishTime>11/12/2015 09:41:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Edit.iPad.cshtml">
+      <publishTime>02/03/2016 09:36:21</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Edit.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/EmailError.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Error.cshtml">
+      <publishTime>11/05/2015 10:33:03</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/ErrorIndex.cshtml">
+      <publishTime>11/05/2015 10:33:03</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/ErrorIndex.iPad.cshtml">
+      <publishTime>02/03/2016 09:36:21</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/ErrorIndex.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/ForgotPassword.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Index.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Index.iPad.cshtml">
+      <publishTime>02/03/2016 09:37:30</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/Index.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/NotUniqueEmailIndex.cshtml">
+      <publishTime>11/08/2015 14:23:48</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/NotUniqueEmailIndex.iPad.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/NotUniqueEmailIndex.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/CheckOut/SendPasswordToCustomer.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ContactUs/Create.cshtml">
+      <publishTime>03/07/2016 09:43:28</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ContactUs/Create.iPad.cshtml">
+      <publishTime>03/07/2016 09:43:28</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ContactUs/Create.Mobile.cshtml">
+      <publishTime>03/07/2016 09:43:27</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ContactUs/Index.cshtml">
+      <publishTime>11/07/2015 14:14:21</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Home/Index.cshtml">
+      <publishTime>03/03/2016 10:55:19</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Home/Index.iPad.cshtml">
+      <publishTime>03/04/2016 10:53:55</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Home/Index.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Home/PromotionAd.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Home/PromotionAd.iPad.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Home/PromotionAd.Mobile.cshtml">
+      <publishTime>03/07/2016 09:46:15</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Shared/Error.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Shared/_Layout.cshtml">
+      <publishTime>03/03/2016 10:28:57</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Shared/_Layout.iPad.cshtml">
+      <publishTime>03/03/2016 10:28:57</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Shared/_Layout.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Shared/_LoginPartial.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Shared/_ViewSwitcher.cshtml">
+      <publishTime>11/06/2015 12:04:24</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ShoppingCart/CartSummary.cshtml">
+      <publishTime>11/02/2015 10:31:08</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ShoppingCart/EmptyCart.cshtml">
+      <publishTime>11/04/2015 13:51:50</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ShoppingCart/Index.cshtml">
+      <publishTime>12/08/2015 08:23:35</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ShoppingCart/Index.iPad.cshtml">
+      <publishTime>03/04/2016 11:47:22</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ShoppingCart/Index.Mobile.cshtml">
+      <publishTime>03/04/2016 11:55:54</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/ShoppingCart/LoginDetail.cshtml">
+      <publishTime>11/07/2015 14:31:23</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Browse.cshtml">
+      <publishTime>03/03/2016 10:30:17</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Browse.iPad.cshtml">
+      <publishTime>03/03/2016 10:30:17</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Browse.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Details.cshtml">
+      <publishTime>03/02/2016 11:04:56</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Details.iPad.cshtml">
+      <publishTime>03/04/2016 10:57:58</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Details.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/EmptyCart.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/ErrorEmptyGroup.cshtml">
+      <publishTime>11/11/2015 12:41:23</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/ErrorEmptyGroup.iPad.cshtml">
+      <publishTime>02/03/2016 10:00:08</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/ErrorEmptyGroup.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/FoodGroupMenu.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/FoodGroupMenu.iPad.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/FoodGroupMenu.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Index.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Index.iPad.cshtml">
+      <publishTime>02/03/2016 10:01:56</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/Index.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/SearchItem.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/SearchItem.iPad.cshtml">
+      <publishTime>02/03/2016 10:02:59</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/SearchItem.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/SubBrowse.cshtml">
+      <publishTime>12/07/2015 18:33:03</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/SubBrowse.iPad.cshtml">
+      <publishTime>02/03/2016 10:03:47</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Store/SubBrowse.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodGroup/Create.cshtml">
+      <publishTime>11/03/2015 22:13:22</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodGroup/Edit.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodGroup/Index.cshtml">
+      <publishTime>11/04/2015 19:46:22</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodItem/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodItem/Details.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodItem/Edit.cshtml">
+      <publishTime>11/09/2015 09:03:03</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodItem/Index.cshtml">
+      <publishTime>12/02/2015 14:28:36</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodWeight/Create.cshtml">
+      <publishTime>11/03/2015 22:12:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodWeight/Edit.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerFoodWeight/Index.cshtml">
+      <publishTime>11/04/2015 20:54:58</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerItems/Index.cshtml">
+      <publishTime>11/04/2015 20:35:01</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerItems/Index.Mobile.cshtml">
+      <publishTime>11/06/2015 13:12:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerSellerDetail/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerSellerDetail/Edit.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerSellerDetail/Index.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerSubFoodGroup/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerSubFoodGroup/Edit.cshtml">
+      <publishTime>02/01/2016 11:33:19</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/StoreManagerSubFoodGroup/Index.cshtml">
+      <publishTime>11/04/2015 21:01:05</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Views/_ViewStart.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="obj/Release/Package/PackageTmp/Web.config">
+      <publishTime>03/07/2016 10:06:17</publishTime>
+    </File>
+    <File Include="obj/Release/QuickySaleOnlineShopper.csproj.FileListAbsolute.txt">
+      <publishTime>03/07/2016 10:06:02</publishTime>
+    </File>
+    <File Include="obj/Release/QuickySaleOnlineShopper.csprojResolveAssemblyReference.cache">
+      <publishTime>03/07/2016 10:06:00</publishTime>
+    </File>
+    <File Include="obj/Release/QuickySaleOnlineShopper.dll">
+      <publishTime>03/07/2016 10:06:02</publishTime>
+    </File>
+    <File Include="obj/Release/QuickySaleOnlineShopper.pdb">
+      <publishTime>03/07/2016 10:06:02</publishTime>
+    </File>
+    <File Include="obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs">
+      <publishTime>03/07/2016 10:05:58</publishTime>
+    </File>
+    <File Include="obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs">
+      <publishTime>03/07/2016 10:05:58</publishTime>
+    </File>
+    <File Include="obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs">
+      <publishTime>03/07/2016 10:05:58</publishTime>
+    </File>
+    <File Include="obj/Release/TransformWebConfig/assist/Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="obj/Release/TransformWebConfig/original/Web.config">
+      <publishTime>03/04/2016 17:03:58</publishTime>
+    </File>
+    <File Include="obj/Release/TransformWebConfig/transformed/Web.config">
+      <publishTime>03/07/2016 10:06:17</publishTime>
+    </File>
+    <File Include="obj/Release/_WPPLastBuildInfo.txt">
+      <publishTime>03/07/2016 10:06:16</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/10/2015 08:51:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.2.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.2.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.24.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.24.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mobile-1.1.2.js">
+      <publishTime>05/11/2015 14:13:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mobile-1.1.2.min.js">
+      <publishTime>05/11/2015 14:13:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.0.debug.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.0.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/_ChangePasswordPartial.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/_RemoveExternalLoginsPartial.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Account/_SetPasswordPartial.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/CheckOutLogin.cshtml">
+      <publishTime>12/08/2015 08:49:52</publishTime>
+    </File>
+    <File Include="Views/CheckOut/CheckOutLogin.iMobile.cshtml">
+      <publishTime>12/08/2015 08:49:52</publishTime>
+    </File>
+    <File Include="Views/CheckOut/CheckOutLogin.iPad.cshtml">
+      <publishTime>03/04/2016 11:55:54</publishTime>
+    </File>
+    <File Include="Views/CheckOut/CheckOutLogin.Mobile.cshtml">
+      <publishTime>03/04/2016 11:55:54</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Complete.cshtml">
+      <publishTime>09/08/2016 10:59:24</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Create.iMobile.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Create.iPad.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Create.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Edit.cshtml">
+      <publishTime>11/12/2015 09:41:26</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Edit.iMobile.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Edit.iPad.cshtml">
+      <publishTime>02/03/2016 09:36:21</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Edit.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="Views/CheckOut/EmailError.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Error.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/ErrorIndex.cshtml">
+      <publishTime>05/11/2015 10:33:03</publishTime>
+    </File>
+    <File Include="Views/CheckOut/ErrorIndex.iMobile.cshtml">
+      <publishTime>11/08/2015 14:29:53</publishTime>
+    </File>
+    <File Include="Views/CheckOut/ErrorIndex.iPad.cshtml">
+      <publishTime>02/03/2016 09:36:21</publishTime>
+    </File>
+    <File Include="Views/CheckOut/ErrorIndex.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="Views/CheckOut/ForgotPassword.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Index.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Index.iMobile.cshtml">
+      <publishTime>12/08/2015 08:26:18</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Index.iPad.cshtml">
+      <publishTime>02/03/2016 09:37:30</publishTime>
+    </File>
+    <File Include="Views/CheckOut/Index.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="Views/CheckOut/NotUniqueEmailIndex.cshtml">
+      <publishTime>08/11/2015 14:23:48</publishTime>
+    </File>
+    <File Include="Views/CheckOut/NotUniqueEmailIndex.iMobile.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/CheckOut/NotUniqueEmailIndex.iPad.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="Views/CheckOut/NotUniqueEmailIndex.Mobile.cshtml">
+      <publishTime>03/04/2016 12:44:49</publishTime>
+    </File>
+    <File Include="Views/CheckOut/SendPasswordToCustomer.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/ContactUs/Create.cshtml">
+      <publishTime>03/09/2016 14:54:00</publishTime>
+    </File>
+    <File Include="Views/ContactUs/Create.iPad.cshtml">
+      <publishTime>03/09/2016 14:54:49</publishTime>
+    </File>
+    <File Include="Views/ContactUs/Create.Mobile.cshtml">
+      <publishTime>03/09/2016 14:54:49</publishTime>
+    </File>
+    <File Include="Views/ContactUs/Index.cshtml">
+      <publishTime>07/11/2015 14:14:21</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/09/2016 11:28:24</publishTime>
+    </File>
+    <File Include="Views/Home/Index.iMobile.cshtml">
+      <publishTime>02/04/2016 12:29:14</publishTime>
+    </File>
+    <File Include="Views/Home/Index.iPad.cshtml">
+      <publishTime>09/09/2016 11:28:24</publishTime>
+    </File>
+    <File Include="Views/Home/Index.Mobile.cshtml">
+      <publishTime>09/09/2016 11:28:23</publishTime>
+    </File>
+    <File Include="Views/Home/PromotionAd.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Home/PromotionAd.iPad.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Home/PromotionAd.Mobile.cshtml">
+      <publishTime>03/07/2016 09:46:15</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/09/2016 17:43:47</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.iPad.cshtml">
+      <publishTime>11/09/2016 17:43:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.Mobile.cshtml">
+      <publishTime>11/09/2016 17:43:47</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Shared/_ViewSwitcher.cshtml">
+      <publishTime>06/11/2015 12:04:24</publishTime>
+    </File>
+    <File Include="Views/ShoppingCart/CartSummary.cshtml">
+      <publishTime>02/11/2015 10:31:08</publishTime>
+    </File>
+    <File Include="Views/ShoppingCart/EmptyCart.cshtml">
+      <publishTime>04/11/2015 13:51:50</publishTime>
+    </File>
+    <File Include="Views/ShoppingCart/Index.cshtml">
+      <publishTime>08/12/2015 08:23:35</publishTime>
+    </File>
+    <File Include="Views/ShoppingCart/Index.iPad.cshtml">
+      <publishTime>03/04/2016 11:47:22</publishTime>
+    </File>
+    <File Include="Views/ShoppingCart/Index.Mobile.cshtml">
+      <publishTime>03/04/2016 11:55:54</publishTime>
+    </File>
+    <File Include="Views/ShoppingCart/LoginDetail.cshtml">
+      <publishTime>07/11/2015 14:31:23</publishTime>
+    </File>
+    <File Include="Views/Store/Browse.cshtml">
+      <publishTime>03/03/2016 10:30:17</publishTime>
+    </File>
+    <File Include="Views/Store/Browse.iPad.cshtml">
+      <publishTime>03/03/2016 10:30:17</publishTime>
+    </File>
+    <File Include="Views/Store/Browse.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="Views/Store/Details.cshtml">
+      <publishTime>09/08/2016 10:59:24</publishTime>
+    </File>
+    <File Include="Views/Store/Details.iMobile.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Store/Details.iPad.cshtml">
+      <publishTime>09/08/2016 10:59:24</publishTime>
+    </File>
+    <File Include="Views/Store/Details.Mobile.cshtml">
+      <publishTime>09/08/2016 10:59:24</publishTime>
+    </File>
+    <File Include="Views/Store/EmptyCart.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Store/ErrorEmptyGroup.cshtml">
+      <publishTime>11/11/2015 12:41:23</publishTime>
+    </File>
+    <File Include="Views/Store/ErrorEmptyGroup.cshtml.Mobile.cshtml">
+      <publishTime>12/07/2015 19:38:09</publishTime>
+    </File>
+    <File Include="Views/Store/ErrorEmptyGroup.iMobile.cshtml">
+      <publishTime>02/03/2016 10:00:08</publishTime>
+    </File>
+    <File Include="Views/Store/ErrorEmptyGroup.iPad.cshtml">
+      <publishTime>02/03/2016 10:00:08</publishTime>
+    </File>
+    <File Include="Views/Store/ErrorEmptyGroup.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="Views/Store/FoodGroupMenu.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Store/FoodGroupMenu.iMobile.cshtml">
+      <publishTime>11/06/2015 09:29:19</publishTime>
+    </File>
+    <File Include="Views/Store/FoodGroupMenu.iPad.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Store/FoodGroupMenu.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="Views/Store/Index.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Store/Index.iMobile.cshtml">
+      <publishTime>12/03/2015 08:27:07</publishTime>
+    </File>
+    <File Include="Views/Store/Index.iPad.cshtml">
+      <publishTime>02/03/2016 10:01:56</publishTime>
+    </File>
+    <File Include="Views/Store/Index.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="Views/Store/SearchItem.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/Store/SearchItem.iMobile.cshtml">
+      <publishTime>12/03/2015 09:04:53</publishTime>
+    </File>
+    <File Include="Views/Store/SearchItem.iPad.cshtml">
+      <publishTime>02/03/2016 10:02:59</publishTime>
+    </File>
+    <File Include="Views/Store/SearchItem.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="Views/Store/SubBrowse.cshtml">
+      <publishTime>12/07/2015 18:33:03</publishTime>
+    </File>
+    <File Include="Views/Store/SubBrowse.iMobile.cshtml">
+      <publishTime>12/03/2015 09:04:53</publishTime>
+    </File>
+    <File Include="Views/Store/SubBrowse.iPad.cshtml">
+      <publishTime>02/03/2016 10:03:47</publishTime>
+    </File>
+    <File Include="Views/Store/SubBrowse.Mobile.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodGroup/Create.cshtml">
+      <publishTime>11/03/2015 22:13:22</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodGroup/Edit.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodGroup/Index.cshtml">
+      <publishTime>11/04/2015 19:46:22</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodItem/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodItem/Details.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodItem/Edit.cshtml">
+      <publishTime>11/09/2015 09:03:03</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodItem/Index.cshtml">
+      <publishTime>12/02/2015 14:28:36</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodWeight/Create.cshtml">
+      <publishTime>11/03/2015 22:12:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodWeight/Edit.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerFoodWeight/Index.cshtml">
+      <publishTime>11/04/2015 20:54:58</publishTime>
+    </File>
+    <File Include="Views/StoreManagerItems/Index.cshtml">
+      <publishTime>11/04/2015 20:35:01</publishTime>
+    </File>
+    <File Include="Views/StoreManagerItems/Index.Mobile.cshtml">
+      <publishTime>11/06/2015 13:12:26</publishTime>
+    </File>
+    <File Include="Views/StoreManagerSellerDetail/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerSellerDetail/Edit.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerSellerDetail/Index.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerSubFoodGroup/Create.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/StoreManagerSubFoodGroup/Edit.cshtml">
+      <publishTime>01/02/2016 11:33:19</publishTime>
+    </File>
+    <File Include="Views/StoreManagerSubFoodGroup/Index.cshtml">
+      <publishTime>11/04/2015 21:01:05</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>03/04/2016 11:36:26</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
