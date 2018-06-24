@@ -27,6 +27,8 @@ To rerun this project one will need to go into the webconfig page  and change th
 
 The site won't run without accessing sql. Hence the sql script has been added to git as QSscript.sql  
 
- The screen shots for the site have also been included.  
+BusinessLayer folder contains class libraries used for email and other behind the scenes calculations and functions.  
+
+The screen shots for the site have also been included.  
 
 Pics QS1 to QS2 give an overview of the site QS3 to QS5 show the control manager or control panel pages. The site owner has the ability to add, delete or edit more names to the Catalogue links etc.   
